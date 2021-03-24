@@ -1,0 +1,10 @@
+.popular-wrapper{
+  @include mq('tablet-wide') {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  @include mq('desktop1350') {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}

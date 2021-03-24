@@ -1,0 +1,104 @@
+.footer{
+  position: relative;
+  padding: 50px 0;
+  color: $color_1;
+  a{
+    color: $color_1;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}
+
+
+
+.footer__menu{
+
+  li{
+    margin-bottom: 15px;
+  }
+}
+
+.body-top-footer{
+  background-color: $color_3;
+  padding: 20px 0;
+
+  .wrapper-top-footer{
+    display: flex;
+
+    .top-footer__title{
+      align-self: center;
+      margin-right: 15px;
+      @include adaptiv-font(24,18);
+    }
+    .top-footer__soc{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 15px;
+    }
+  }
+}
+
+.body-middle-footer{
+  background-color: $color_4;
+  padding: 20px 0;
+  @include mq('desktop') {
+    padding: 50px 0;
+  }
+}
+
+.wrapper-middle-footer{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 35px;
+
+  .middle-footer__name{
+    @include adaptiv-font(10,10);
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+  .middle-footer__address{
+    @include adaptiv-font(12,10);
+  }
+  .middle-footer__mail{
+    text-decoration: underline;
+    @include adaptiv-font(12,10);
+    display: block;
+    margin: 17px 0;
+  }
+  .middle-footer__phone{
+    @include adaptiv-font(12,10);
+    display: block;
+  }
+  .soc-ic{
+    margin-top: 25px;
+  }
+  @include mq('tablet') {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  @include mq('desktop') {
+    grid-template-columns: 2fr 2fr 2fr 1fr 2fr;
+    justify-content: space-between;
+  }
+}
+
+
+
+.body-bottom-footer{
+  background-color: $color_3;
+  padding: 20px 0;
+
+
+  .wrapper-bottom-footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    @include mq('tablet') {
+      grid-template-columns: auto auto auto;
+      align-items: flex-end;
+      justify-content: space-between;
+
+    }
+  }
+}
+

@@ -1,0 +1,143 @@
+//-----------ОСНОВНЫЕ ЦВЕТА------------------
+$color_1: #FFFFFF;
+$color_2: #161616;
+$color_3: #023E5A;
+$color_4: #005176;
+$color_5: #FE9D45;
+$color_6: #C4C4C4;
+$link-img: '';
+
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: $color_2;
+  font-weight: 400;
+  min-height: 100vh;
+  line-height: 1.5;
+  background: $color_1;
+  @include adaptiv-font(16,14);
+}
+
+//-----------Кнопка основная------------------
+
+.button{
+  background: $color_3;
+  color: $color_1;
+  text-align: center;
+  padding: 11px 27px;
+  cursor: pointer;
+  transition: .5s;
+  width: fit-content;
+  @include adaptiv-font(16,14);
+  font-weight: 400;
+  border: 1px solid $color_3;
+
+  &:hover{
+
+  }
+  
+}
+
+.button-orange{
+  color: $color_5;
+  text-align: center;
+  padding: 18px 25px;
+  cursor: pointer;
+  transition: .5s;
+  width: fit-content;
+  border: 1px solid $color_5;
+  @include adaptiv-font(16,14);
+  font-weight: 400;
+
+  &:hover{
+
+  }
+
+}
+
+//------------Заголовки и подзоголовки-----------------
+
+
+.title{
+  @include adaptiv-font(36,24);
+  font-weight: 700;
+}
+
+.title-h3{
+  @include adaptiv-font(20,18);
+  font-weight: 600;
+  @include maq('tablet-wide') {
+    text-align: center;
+  }
+}
+a{
+  color: $color_2;
+}
+
+
+//*=============================================
+%flex {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+//=============================================
+
+//==============СКРОЛЛ НА МОБИЛЕ===============
+.BLOCK-SCROLL {
+  width: 100%;
+  overflow: auto;
+  padding: 1rem;
+}
+@media only screen and (max-width: 990px) {
+  .BLOCK-SCROLL_WIDTH {
+    display: flex;
+    width: 100%;
+    padding: 0 15px 0 0;
+  }
+}
+
+.NO-SKROLL {
+  height: 100vh;
+  overflow: hidden;
+}
+
+//*=============================================
+
+.container{
+  width: 100%;
+  padding: 0 15px;
+  position: relative;
+  margin: auto;
+  display: block;
+  @include mq('phablet') {
+    max-width: 540px;
+  }
+  @include mq('tablet') {
+    max-width: 720px;
+  }
+  @include mq('tablet-990') {
+    max-width: 930px;
+  }
+  @include mq('desktop') {
+    max-width: 1045px;
+  }
+
+}
+
+.square{
+
+  li{
+    @if ($link-img == '') {
+      background-image: url("./../img/ic/square.svg");
+    } @else {
+      background-image: url($link-img + "/img/ic/square.svg");
+    }
+    padding-left: 30px;
+    background-position: left;
+    background-repeat: no-repeat;
+  }
+}
+.d-none{
+  display: none;
+}
