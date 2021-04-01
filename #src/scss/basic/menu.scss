@@ -147,7 +147,7 @@
   .second-menu, .path-menu {
     padding-bottom: 3px;
     transition: .3s;
-    @include adaptiv-font(18, 18);
+    @include adaptiv-font(18, 16);
     color: $color_1;
     cursor: pointer;
 
@@ -223,7 +223,7 @@
   @include maq('tablet-wide') {
     overflow-y: auto;
   }
-  @include mq('desktop') {
+  @include mq('tablet-wide') {
     position: relative;
     width: 100%;
     top: 0;
@@ -237,7 +237,7 @@
 }
 
 .menu {
-  @include mq('desktop') {
+  @include mq('tablet-wide') {
     display: flex;
   }
 }

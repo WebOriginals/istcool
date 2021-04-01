@@ -1,8 +1,9 @@
 if( $( '.dropDownList-title' ).length ) {
     $(".dropDownList-title").click(function () {
         var elem = this;
-        var block = $(elem).next('.dropDownList-hidden');
-        $(block).slideToggle(parameters);
+        var block = $(elem).closest('.wrapper-dropDownList');
+        var hidden = $(block).find('.dropDownList-hidden');
+        $(hidden).slideToggle(parameters);
         $(elem).toggleClass("open");
     });
 }

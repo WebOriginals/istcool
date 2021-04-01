@@ -8,9 +8,24 @@ if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
             navigation: {
                 nextEl: '.popular-button-next',
                 prevEl: '.popular-button-prev',
-
             },
+            breakpoints: {
 
+                320: {
+                    slidesPerView: 1.2,
+                    spaceBetween: 15,
+                },
+
+                600: {
+                    slidesPerView: 2.5,
+                },
+
+
+                990: {
+                    slidesPerView: 3,
+
+                }
+            }
         });
     };
 }

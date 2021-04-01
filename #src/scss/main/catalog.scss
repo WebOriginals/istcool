@@ -1,5 +1,11 @@
-.popular-wrapper{
+.sec-catalog {
+  padding: 20px 0 30px;
   @include mq('tablet-wide') {
+    padding: 20px 0 50px;
+  }
+}
+  .popular-wrapper{
+  @include mq('desktop') {
     display: grid;
     grid-gap: 30px;
     grid-template-columns: 1fr 1fr 1fr;

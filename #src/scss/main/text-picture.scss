@@ -1,0 +1,38 @@
+.sec-text-picture{
+  padding: 30px 0 30px;
+  @include mq('tablet-wide') {
+    padding: 50px 0 50px;
+  }
+}
+
+.body-text-picture{
+  display: grid;
+  grid-gap: 30px;
+  @include mq('tablet') {
+    grid-template-columns: 238px 1fr;
+    grid-gap: 80px;
+  }
+  @include mq('desktop') {
+    grid-gap: 120px;
+  }
+}
+
+.text-picture__img{
+
+  img{
+    max-width: 100%;
+    @include maq('tablet') {
+      display: block;
+      margin: auto;
+    }
+  }
+}
+
+.text-picture__description{
+
+  h2{
+    @include adaptiv-font(36,24);
+    @include adaptiv-margin-bottom(30,20);
+  }
+}
+

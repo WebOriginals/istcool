@@ -1,8 +1,4 @@
-if( $( '.price-text' ).length ) {
-    if (window.screen.width <= 1240) {
-        $('.select-value').html("ценa ↑");
-    }
-}
+
 
 ( function( $ ){
 

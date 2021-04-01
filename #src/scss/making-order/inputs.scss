@@ -1,0 +1,73 @@
+
+
+.making-order-inputs__title{
+  @include adaptiv-font(20,18);
+  font-weight: bold;
+  @include adaptiv-margin-bottom(30,20);
+}
+
+.options__item{
+  margin-bottom: 10px;
+}
+
+.wrapper-btn{
+  margin-top: 20px;
+  display: flex;
+  @include maq('tablet') {
+    justify-content: space-between;
+  }
+}
+.contact-btn{
+  margin-right: 40px;
+}
+.wrapper-all-input-text{
+  display: grid;
+  grid-gap: 20px;
+  @include mq('tablet') {
+    //grid-template-columns: 1fr 240px;
+    grid-template-columns: minmax(auto, 420px) minmax(auto, 280px);
+    grid-gap: 30px;
+  }
+}
+
+.block-contact{
+  margin: 40px 0;
+}
+
+.type-delivery{
+  margin: 20px 0;
+}
+
+.deliveryInputsRadio{
+  display: grid;
+  @include mq('tablet') {
+    //grid-template-columns: 1fr 240px;
+    grid-template-columns: minmax(auto, 420px) minmax(auto, 280px);
+
+  }
+}
+
+.block-payment{
+  margin: 40px 0 0;
+}
+
+.inputsContactText{
+  p{
+    @include adaptiv-font(12,12);
+  }
+}
+
+.contact-information{
+
+  .block-payment{
+    display: none;
+    @include mq('tablet-wide') {
+      display: block;
+    }
+  }
+}
+
+.product-list__btn{
+  margin-top: 20px;
+}
+

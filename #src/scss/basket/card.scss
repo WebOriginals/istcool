@@ -1,0 +1,152 @@
+.sec-card-basket{
+  padding: 30px 0 45px;
+  @include mq('tablet') {
+    padding: 20px 0 75px;
+  }
+}
+
+.wrapper-tablet-title{
+  display: none;
+  @include mq('tablet') {
+    display: grid;
+    grid-template-columns: 150px 1fr 160px 150px 130px;
+    grid-gap: 10px;
+  }
+}
+
+.tablet-title__el{
+  font-style: italic;
+  font-weight: 500;
+  @include adaptiv-font(16,14);
+  color: $color_6;
+}
+
+.basket-card{
+  padding-top: 20px;
+  &:not(:last-child){
+    margin-bottom: 40px;
+  }
+  display: grid;
+  grid-gap: 10px;
+  @include mq('tablet') {
+    grid-template-columns: 150px 1fr ;
+    align-items: center;
+
+  }
+  @include mq('tablet') {
+    .card-info__number{
+        border: 1px solid $color_3;
+      width: 60px;
+    }
+    .card-info__quantity{
+      width: 131px;
+      height: 59px;
+
+    }
+  }
+  .basket-card__content{
+    display: grid;
+
+    @include mq('tablet') {
+      grid-template-columns: 1fr 130px 150px 130px;
+      grid-gap: 15px;
+    }
+  }
+
+  .wrapper-price.all{
+    @include maq('tablet') {
+      display: none;
+    }
+  }
+
+  .wrapper-dropDownList{
+    @include mq('tablet') {
+      transform: translateY(-14px);
+    }
+    @include mq('desktop') {
+      grid-area: 2/2/2/5;
+      transform: translateY(-20px);
+    }
+  }
+
+  .wraapper-tit-pri{
+    @include mq('tablet-wide') {
+      display: flex;
+      justify-content: space-between;
+      width: 525px;
+      .dropDownList-title{
+        margin-right: 20px;
+        align-self: center;
+      }
+      .wrapper-price{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 30%;
+        justify-content: flex-start;
+      }
+    }
+  }
+}
+.wrapper-price{
+  height: 48px;
+  @include mq('tablet-wide') {
+    justify-content: flex-end;
+  }
+}
+
+
+.body-itogi{
+  margin-top: 40px;
+
+  .wrapper-result{
+    padding: 40px 0 0;
+  }
+}
+
+.wrapper-promo{
+  display: grid;
+  grid-template-columns: 1fr;
+  @include mq('tablet') {
+    grid-template-columns: 120px 210px 1fr;
+  }
+  align-items: center;
+  grid-gap: 15px;
+
+  .input{
+    margin-bottom: 0;
+    height: 100%;
+  }
+  .promo-title{
+    @include adaptiv-font(18,16);
+    font-weight: bold;
+  }
+}
+
+.wrapper-result-btn{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 30px;
+  @include maq('tablet') {
+    flex-direction: column;
+
+    .itogi-btn{
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .itogi-btn{
+      width: 100%;
+    }
+  }
+}
+
+.itogi-btn{
+  margin-right: 25px;
+}
+
+.basket-card__img{
+  img{
+    max-width: 100%;
+  }
+}
+
+

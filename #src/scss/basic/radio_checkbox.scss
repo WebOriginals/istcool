@@ -1,70 +1,110 @@
-.label-radio{
-  @include adaptiv-font(16,14);
-  padding: 10px 5px;
-  cursor: pointer;
-  &:hover{
-    color: $color_1e;
-    font-weight: bold;
-  }
-}
-
-.input-radio{
+.options__input {
   display: none;
 }
 
-.input-radio:checked + .label-radio{
-  color: $color_1e;
-  font-weight: bold;
+.options__input:checked + .options__label::after {
+  transform: scale(1);
 }
 
-
-
-
-.label-checkbox {
-  display: block;
-  cursor: pointer;
+.options__label {
+  display: flex;
+  font-size: 16px;
+  line-height: 140%;
+  align-items: center;
   position: relative;
-  padding: 5px 0 0 36px;
-  margin-right: 15px;
-  @include adaptiv-font(16, 14);
-  font-weight: bold;
-  margin-bottom: 25px;
+  cursor: pointer;
 }
 
-.input-radio[type=radio],
-.input-checkbox[type=checkbox],
-.input-checkbox[type=radio] {
+.options__label::before {
+  content: "";
+  align-self: flex-start;
+  flex: 0 0 16px;
+  height: 16px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin: 0px 10px 0px 0px;
+  border: 1px solid $color_3;
+}
+
+.options__label::after {
+  transition: transform 0.5s ease 0s;
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 8px;
+  height: 8px;
+  background-color: $color_3;
+  border-radius: 50%;
+  transform: scale(0);
+}
+
+.input{
+  width: 100%;
+  border: 1px solid $color_3;
+  padding: 10px 15px;
+  @include adaptiv-font(16,14);
+
+  &:not(:last-child){
+    margin-bottom: 10px;
+  }
+  &::placeholder{
+    @include adaptiv-font(16,14);
+  }
+}
+
+
+
+
+
+
+.checkbox._error .checkbox__label::before {
+  box-shadow: 0 0 15px red;
+}
+
+.checkbox__input {
   display: none;
 }
 
-.label-checkbox:before {
-  content: "";
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  margin-right: 10px;
-  position: absolute;
-  left: 0;
-  top: 5px;
-  bottom: 1px;
-  border: 1px solid $color_3b;
+.checkbox__input:checked + .checkbox__label::after {
+  display: block;
 }
 
-.input-checkbox[type=checkbox]:checked + .label-checkbox:after,
-.input-checkbox[type=radio]:checked + .label-checkbox:after{
+.checkbox__label {
+  font-size: 16px;
+  line-height: 140%;
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.checkbox__label::before {
   content: "";
-  @if ($link-img == '') {
-    background-image: url("../img/ic/checkbox.svg");
-  } @else {
-    background-image: url($link-img + "/img/ic/checkbox.svg");
-  }
-  background-position: 4px 0px;
-  background-repeat: no-repeat;
-  top: 0px;
-  left: 0;
+  align-self: flex-start;
+  flex: 0 0 16px;
+  height: 16px;
+  background-color: #fff;
+  border: 1px solid $color_3;
+  margin: 11px 10px 0px 0px;
+}
+
+.checkbox__label::after {
+  display: none;
+  transition: transform 0.5s ease 0s;
+  content: "";
+  width: 14px;
+  height: 14px;
   position: absolute;
-  display: block;
-  width: 27px;
-  height: 25px;
+  top: 2px;
+  left: 2px;
+  margin-top: 11px;
+  @if ($link-img == '') {
+    background-image: url("./../../img/ic/chexkbox.svg");
+  } @else {
+    background-image: url($link-img + "/img/ic/chexkbox.svg");
+  }
+  background-repeat: no-repeat;
+
 }
 

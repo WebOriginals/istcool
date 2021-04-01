@@ -179,6 +179,172 @@ document.addEventListener('keydown', function (e) {
     }
 })();
 
+    if ($('.tabs').length) {
+    let tab = function () {
+        let AllBodyTabs = document.querySelectorAll('.tabs');
+
+        AllBodyTabs.forEach(tab=> {
+
+            let tabNav = tab.querySelectorAll('.tabs-nav__item'),
+                tabContant = tab.querySelectorAll('.tab-pane'),
+                tabName;
+
+            let selectTabContant = function() {
+
+                tabContant.forEach(item=>{
+                    item.classList.contains(tabName)? item.classList.add('is-active'): item.classList.remove('is-active');
+                })
+            }
+
+            tabNav.forEach(item => {
+                item.addEventListener('click', function(){
+
+                    tabNav.forEach(item=>{
+                        item.classList.remove('is-active')
+                    });
+
+                    this.classList.add('is-active');
+                    tabName = this.getAttribute('data-tab-name')
+                    selectTabContant(tabName);
+                })
+            })
+        });
+    }
+    tab();
+};
+    
+
+( function( $ ){
+
+    // Настройки
+
+    var settings = {
+        select_value : 'select-value',
+        action : 'select_edit',
+        class_open : 'open',
+        class_transfotm : 'transfotm',
+        class_wrapper : 'wrapper-input',
+        class_block : 'wrapper-size',
+        class_buffer : 'input-buffer',
+        class_items : 'list__itams',
+        class_selector : 'js_size_selector',
+        class_disabel : 'list__itams-disabel',
+    };
+
+
+    var hendler = {
+
+        // Инициализация
+
+        construct : function(){
+            if( $( "." + settings.class_wrapper ).length ){
+                $( "." + settings.class_wrapper ).unbind( "click." + settings.action );
+                $( "." + settings.class_wrapper ).bind( "click." + settings.action, function (){
+                    hendler.select_action( this );
+                });
+            }
+        },
+
+        // Нажатие на блок селекта
+
+        select_action : function( elem ){
+
+            var input = $( elem ).find( 'input' ); // Инпут блока
+            var value = $( elem ).find( '.' + settings.select_value ); // Значение блока
+            var block = $( elem ).closest( '.' + settings.class_block ); // Находим общую обертку
+            var selector = $( block ).find( '.' + settings.class_selector ); // Находим облок элементов внутри общей обертки
+            var items = $( selector ).find( '.' + settings.class_items ).not( '.' + settings.class_disabel ); // Находим все item внутри общей обертки
+
+            // Закрыть селект
+
+            var close_select = function(){
+                $( items ).unbind( 'click.' + settings.action ); // Отменяем оброботчик кликов на item
+                $( document ).unbind( 'mouseup.' + settings.action ); // Отменяем обработчик клика вне общей обертки
+                $( selector ).removeClass( settings.class_open ); // Закрываем блок
+                $( block ).removeClass( settings.class_transfotm ); // Изменяем стрелку селекта
+            };
+
+            $( selector ).toggleClass( settings.class_open ); // Открываем или скрываем
+
+            // Если открыли блок селекта
+
+            if( $( selector ).hasClass( settings.class_open ) ){
+
+                $( block ).addClass( settings.class_transfotm ); // Изменяем стрелку селекта
+
+                // Определяем обработчик клика на item
+
+                $( items ).unbind( 'click.' + settings.action ).bind( 'click.' + settings.action, function(){
+
+                    $( value ).text( $( this ).text() ); // Берем текст из item и сохраняем в видимое выбраное значение
+                    $( input ).val( $( this ).data( 'value' ) || $( this ).text()).trigger("change"); // Берем дата параметр или текст из item и сохраняем в наш input
+
+                    if(window.screen.width<=1023) {
+                        $(value).text(value.text().substring(0, 27)); //ограничиваем кол-во символов на строке
+                        if ($(value).text().length >= 27) { // считаем сколько символов и если больше или равно 27 добавлять ...
+                            $(value).append("...");
+                        }
+                    } else {
+                        $(value).text(value.text().substring(0, 50)); //ограничиваем кол-во символов на строке
+                        if ($(value).text().length >= 50) { // считаем сколько символов и если больше или равно 27 добавлять ...
+                            $(value).append("...");
+                        }
+                    }
+                    close_select();
+                });
+
+                // Определяем обработчик клика вне блока
+
+                $( document ).unbind( 'mouseup.' + settings.action ).bind( 'mouseup.' + settings.action, function( e ){
+
+                    // Если нажали не на нашу общую обертку или не на блок внутри нее
+
+                    if( !$( block ).is( e.target ) && $( block ).has( e.target ).length === 0 ){ close_select(); }
+                });
+
+            } else { close_select(); }
+        }
+    };
+
+    window.obora_selector = hendler;
+
+    $( document ).ready( function(){ hendler.construct(); });
+
+})( jQuery );
+    if( $( '.dropDownList-title' ).length ) {
+    $(".dropDownList-title").click(function () {
+        var elem = this;
+        var block = $(elem).closest('.wrapper-dropDownList');
+        var hidden = $(block).find('.dropDownList-hidden');
+        $(hidden).slideToggle(parameters);
+        $(elem).toggleClass("open");
+    });
+}
+    if( $( '.card-info__quantity' ).length ) {
+    function countFunc(count) {
+        var btnPlus = count.querySelector('.card-info__plus');
+        var btnMinus = count.querySelector('.card-info__minus');
+        var field = count.querySelector('.card-info__number');
+        var fieldValue = parseFloat(field.value, 10);//Прообразовываем к числу
+
+        btnMinus.addEventListener('click', function () {
+            if (fieldValue > 1) {
+                fieldValue--;
+                field.value = fieldValue;
+            } else {
+                return 1;
+            }
+        });
+        btnPlus.addEventListener('click', function () {
+            fieldValue++;
+            field.value = fieldValue;
+        });
+
+    }
+
+    var counts = document.querySelectorAll('.card-info__quantity');
+    counts.forEach(countFunc);
+}
     // end component
 
 
@@ -204,11 +370,134 @@ document.addEventListener('keydown', function (e) {
             navigation: {
                 nextEl: '.popular-button-next',
                 prevEl: '.popular-button-prev',
-
             },
+            breakpoints: {
 
+                320: {
+                    slidesPerView: 1.2,
+                    spaceBetween: 15,
+                },
+
+                600: {
+                    slidesPerView: 2.5,
+                },
+
+
+                990: {
+                    slidesPerView: 3,
+
+                }
+            }
         });
     };
+}
+    if ($('.banner-container').length) {
+    var banner = new Swiper('.banner-container', {
+        slidesPerView: 1,
+        spaceBetween: 15,
+        loop: true,
+        lazy: true,
+        slideToClickedSlide: true,
+        pagination: {
+            el: '.banner-pagination',
+        },
+    });
+
+};
+
+
+
+    if( $( '.news-container' ).length ) {
+    var swiper = new Swiper('.news-container', {
+        slidesPerView: 1,
+        spaceBetween: 15,
+        lazy: true,
+        pagination: {
+            el: '.news-pagination',
+        },
+        breakpoints: {
+
+            320: {
+                slidesPerView: 1.2,
+                spaceBetween: 15,
+            },
+
+            600: {
+                slidesPerView: 2.5,
+            },
+
+
+            990: {
+                slidesPerView: 3,
+
+            },
+            1350: {
+                slidesPerView: 4,
+                spaceBetween: 22,
+            },
+        }
+    });
+}
+    if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+    if( $( '.articles-container' ).length ) {
+        var swiper = new Swiper('.articles-container', {
+            slidesPerView: 1,
+            spaceBetween: 15,
+            lazy: true,
+            pagination: {
+                el: '.articles-pagination',
+            },
+            breakpoints: {
+
+                320: {
+                    slidesPerView: 1.2,
+                    spaceBetween: 15,
+                },
+
+                600: {
+                    slidesPerView: 2.5,
+                },
+
+
+                990: {
+                    slidesPerView: 3,
+
+                }
+            }
+        });
+    }
+}
+    if( $( '.hit-container' ).length ) {
+    var swiper = new Swiper('.hit-container', {
+        slidesPerView: 1,
+        spaceBetween: 15,
+        lazy: true,
+        observer:true,
+        observeSlideChildren:true,
+        observeParents:true,
+
+        breakpoints: {
+
+            320: {
+                slidesPerView: 1.2,
+                spaceBetween: 15,
+            },
+
+            600: {
+                slidesPerView: 2.5,
+            },
+
+
+            990: {
+                slidesPerView: 3,
+
+            },
+            1350: {
+                slidesPerView: 4,
+                spaceBetween: 22,
+            },
+        }
+    });
 }
     // end sliders
 

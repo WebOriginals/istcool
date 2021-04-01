@@ -5,6 +5,8 @@ $color_3: #023E5A;
 $color_4: #005176;
 $color_5: #FE9D45;
 $color_6: #C4C4C4;
+$color_7: #F9CA00;
+$color_8: #EA524E;
 $link-img: '';
 
 
@@ -31,6 +33,7 @@ body {
   @include adaptiv-font(16,14);
   font-weight: 400;
   border: 1px solid $color_3;
+  //font-family: ;
 
   &:hover{
 
@@ -39,12 +42,13 @@ body {
 }
 
 .button-orange{
-  color: $color_5;
+  color: $color_1;
   text-align: center;
-  padding: 18px 25px;
+  padding: 11px 25px;
   cursor: pointer;
   transition: .5s;
   width: fit-content;
+  background: $color_5;
   border: 1px solid $color_5;
   @include adaptiv-font(16,14);
   font-weight: 400;
@@ -60,7 +64,7 @@ body {
 
 .title{
   @include adaptiv-font(36,24);
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .title-h3{
@@ -122,7 +126,6 @@ a{
   @include mq('desktop') {
     max-width: 1045px;
   }
-
 }
 
 .square{
@@ -140,4 +143,44 @@ a{
 }
 .d-none{
   display: none;
+}
+
+.pagination{
+
+
+  .swiper-pagination-bullet{
+    border-radius: 0;
+    width: 22px;
+    height: 2px;
+    background-color: $color_4;
+  }
+
+  .swiper-pagination-bullet-active{
+    background-color: $color_3;
+  }
+}
+
+.title-duo__header{
+  @include adaptiv-margin-bottom(40,30);
+
+  .title-duo__title{
+    display: inline-block;
+    padding-right: 10px;
+    @include adaptiv-font(36,24);
+    line-height: 1;
+    @include mq('tablet-wide') {
+      border-right: 1px solid $color_2;
+    }
+  }
+  .title-duo__additional-text{
+    display: none;
+    @include mq('tablet-wide') {
+      display: inline-block;
+      padding-left: 10px;
+      @include adaptiv-font(16, 16);
+      font-weight: 300;
+
+    }
+  }
+
 }

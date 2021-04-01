@@ -1,5 +1,5 @@
 .card-info__quantity{
-  border: 1px solid $color_3b;
+
   padding: 15px;
   display: flex;
   justify-content: space-between;
@@ -21,7 +21,7 @@
 }
 
 .card-info__number{
-  width: 17px;
+  width: 25px;
   margin: 0 5px;
   text-align: center;
   @include mq('desktop-wide') {

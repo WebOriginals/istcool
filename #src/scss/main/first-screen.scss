@@ -1,7 +1,8 @@
+
 .first-screen{
   padding: 25px 0 25px;
   @include mq('tablet-wide') {
-    padding: 50px 0 30px;
+    padding: 50px 0 20px;
   }
 }
 
@@ -12,13 +13,3 @@
   }
 }
 
-.swiper-pagination-bullet{
-  border-radius: 0;
-  width: 22px;
-  height: 2px;
-  background-color: $color_4;
-}
-
-.swiper-pagination-bullet-active{
-  background-color: $color_3;
-}

@@ -1,0 +1,75 @@
+.wrapper-making-order-inputs
+    .contact-information
+        .making-order-inputs__title Тип плательщика
+        .type-man
+            .options__item
+                input#formNaturalPerson(checked type="radio" value="NaturalPerson" name="man").options__input
+                label(for="formNaturalPerson").options__label
+                    span Физическое лицо
+            .options__item
+                input#formLegalEntity( type="radio" value="formLegalEntity" name="man").options__input
+                label(for="formLegalEntity").options__label
+                    span Юридическое лицо
+
+        .block-contact
+            .making-order-inputs__title Контактная информация
+            .wrapper-all-input-text
+                .inputsContactBtn
+                    input(placeholder="ФИО*").input
+                    input(placeholder="Телефон*").input
+                    input(placeholder="E-mail*").input
+                    .wrapper-btn
+                        .contact-btn.button Войти
+                        .contact-btn.button-orange Зарегистрироваться
+
+                .inputsContactText
+                    p Обратите внимание, что только зарегистрированные пользователи могут пользоваться преимуществами программы лояльности, получать скидки и бонусные начисления, а также просматривать информацию по заказу
+
+
+        .block-delivery
+            .making-order-inputs__title Доставка
+            .deliveryInputsRadio
+                .wrapperInputsRadio
+                    input(placeholder="Город").input
+                    .type-delivery
+                        .options__item
+                            input#formDelivery1(checked type="radio" value="NaturalPerson" name="delivery").options__input
+                            label(for="formDelivery1").options__label
+                                span ТК Деловые Линии до адреса (от 4х дней - 3 000р)
+                        .options__item
+                            input#formDelivery2( type="radio" value="formLegalEntity" name="delivery").options__input
+                            label(for="formDelivery2").options__label
+                                span ТК Деловые Линии до ПВЗ (от 4х дней - 1 000р)
+                        .options__item
+                            input#formDelivery3(type="radio" value="NaturalPerson" name="delivery").options__input
+                            label(for="formDelivery3").options__label
+                                span Доставка до места проведения монтажных работ
+                        .options__item
+                            input#formDelivery4( type="radio" value="formLegalEntity" name="delivery").options__input
+                            label(for="formDelivery4").options__label
+                                span Самовывоз
+                    input(placeholder="Страна*").input
+                    input(placeholder="Улица*").input
+                    input(placeholder="Дом*").input
+                    input(placeholder="Индекс*").input
+                    input(placeholder="Этаж").input
+                    input(placeholder="Комментарий к заказу").input
+
+        .block-payment
+            .making-order-inputs__title Оплата
+            .paymentRadio
+                .type-payment
+                    .options__item
+                        input#formPayment1(checked type="radio" value="NaturalPerson" name="payment").options__input
+                        label(for="formPayment1").options__label
+                            span Оплата при получении (наложенным платежом)
+                    .options__item
+                        input#formPayment2( type="radio" value="formLegalEntity" name="payment").options__input
+                        label(for="formPayment2").options__label
+                            span Оплата по расчетному счету
+                    .options__item
+                        input#formPayment3(type="radio" value="NaturalPerson" name="payment").options__input
+                        label(for="formPayment3").options__label
+                            span Оплата картой
+
+            .product-list__btn.button Оформить заказ

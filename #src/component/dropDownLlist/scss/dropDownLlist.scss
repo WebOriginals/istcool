@@ -1,21 +1,25 @@
 .dropDownList-title{
   padding-bottom: 10px;
   cursor: pointer;
-  padding-right: 15px;
-  background-position: right;
+  padding-right: 25px;
+  background-position: right 10px;
   background-repeat: no-repeat;
+  width: 100%;
+  @include mq('tablet') {
+    width: fit-content;
+  }
 
   @if ($link-img == '') {
-    background-image: url("./../../../img/ic/arrow-black.svg");
+    background-image: url("./../../../img/ic/input-arrow.svg");
   } @else {
-    background-image: url($link-img + "/img/ic/arrow-black.svg");
+    background-image: url($link-img + "/img/ic/input-arrow.svg");
   }
 
   &.open{
     @if ($link-img == '') {
-      background-image: url("./../../../img/ic/arrow-eylloy.svg");
+      background-image: url("./../../../img/ic/input-arrowUp.svg");
     } @else {
-      background-image: url($link-img + "/img/ic/arrow-eylloy.svg");
+      background-image: url($link-img + "/img/ic/input-arrowUp.svg");
     }
   }
 }

@@ -1,23 +1,22 @@
-if( $( '.news-main-container' ).length ) {
-    var swiper = new Swiper('.news-main-container', {
+if( $( '.news-container' ).length ) {
+    var swiper = new Swiper('.news-container', {
         slidesPerView: 1,
-        spaceBetween: 30,
+        spaceBetween: 15,
         lazy: true,
-
+        pagination: {
+            el: '.news-pagination',
+        },
         breakpoints: {
 
             320: {
-                slidesPerView: 1,
+                slidesPerView: 1.2,
                 spaceBetween: 15,
             },
 
             600: {
-                slidesPerView: 1.5,
+                slidesPerView: 2.5,
             },
-            767: {
-                slidesPerView: 2,
-                spaceBetween: 30,
-            },
+
 
             990: {
                 slidesPerView: 3,
@@ -25,7 +24,7 @@ if( $( '.news-main-container' ).length ) {
             },
             1350: {
                 slidesPerView: 4,
-                spaceBetween: 30,
+                spaceBetween: 22,
             },
         }
     });

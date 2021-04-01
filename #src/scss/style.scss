@@ -5,12 +5,12 @@
 @import "defuld/origin_style.scss";
 
 //component
-//@import "../component/dropDownLlist/scss/dropDownLlist.scss";
-//@import "../component/Tabs/scss/tabs.scss";
-//@import "../component/InputList/scss/InpuList.scss";
+@import "../component/dropDownLlist/scss/dropDownLlist.scss";
+@import "../component/Tabs/scss/tabs.scss";
+@import "../component/InputList/scss/InpuList.scss";
 //@import "../component/map/scss/map.scss";
 @import "../component/Modals/scss/modals.scss";
-//@import "../component/Quantity/scss/quantity.scss";
+@import "../component/Quantity/scss/quantity.scss";
 
 
 //basic
@@ -22,7 +22,7 @@
 @import "basic/cooki.scss";
 //@import "basic/card-goods.scss";
 //@import "basic/card-news.scss";
-//@import "basic/radio_checkbox.scss";
+@import "basic/radio_checkbox.scss";
 //@import "basic/pagenation.scss";
 
 
@@ -31,5 +31,18 @@
 //page main
 @import "main/first-screen.scss";
 @import "main/catalog.scss";
+@import "main/advantages.scss";
+@import "main/baren.scss";
+@import "main/news.scss";
+@import "main/text-picture.scss";
+@import "main/articles.scss";
+@import "main/hit.scss";
+
+//page making-order
+@import "making-order/inputs.scss";
+@import "making-order/order-conposition.scss";
+
+//page basket
+@import "basket/card.scss";
 
 
