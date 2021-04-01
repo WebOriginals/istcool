@@ -31,7 +31,12 @@
   @include mq('tablet') {
     grid-template-columns: 150px 1fr ;
     align-items: center;
-
+    .dropDownList-hidden{
+      width: 526px;
+    }
+    .checkbox{
+      justify-content: flex-end;
+    }
   }
   @include mq('tablet') {
     .card-info__number{
@@ -86,6 +91,8 @@
       }
     }
   }
+
+
 }
 .wrapper-price{
   height: 48px;

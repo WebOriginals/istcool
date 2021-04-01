@@ -174,3 +174,16 @@
     margin-left: -15px;
   }
 }
+
+.wrapper-price.order{
+  justify-content: flex-start;
+  .price-newse{
+    margin-right: 15px;
+  }
+}
+.wrapper-price.order-top{
+  justify-content: flex-start;
+  .price-newse{
+    margin-right: 9px;
+  }
+}

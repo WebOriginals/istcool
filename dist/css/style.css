@@ -1439,6 +1439,22 @@ body.lock {
   padding: 10px 20px;
 }
 
+.wrapper-price.order {
+  justify-content: flex-start;
+}
+
+.wrapper-price.order .price-newse {
+  margin-right: 15px;
+}
+
+.wrapper-price.order-top {
+  justify-content: flex-start;
+}
+
+.wrapper-price.order-top .price-newse {
+  margin-right: 9px;
+}
+
 .sec-card-basket {
   padding: 30px 0 45px;
 }
@@ -1609,6 +1625,14 @@ body.lock {
   .basket-card {
     grid-template-columns: 150px 1fr;
     align-items: center;
+  }
+
+  .basket-card .dropDownList-hidden {
+    width: 526px;
+  }
+
+  .basket-card .checkbox {
+    justify-content: flex-end;
   }
 
   .basket-card .card-info__number {
