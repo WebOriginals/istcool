@@ -1,0 +1,15 @@
+.sec-seo-text{
+  padding: 30px 0 40px;
+}
+
+.body-seo-text{
+
+  h2{
+    @include adaptiv-font(18,16);
+    font-weight: bold;
+  }
+  p{
+    @include adaptiv-font(16,14);
+    margin-bottom: 20px;
+  }
+}

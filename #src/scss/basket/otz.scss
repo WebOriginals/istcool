@@ -1,0 +1,160 @@
+.sec-otz{
+  padding: 50px 0;
+  @media only screen and (min-width: 1200px) {
+    padding: 120px 0;
+  }
+}
+
+.body-otz{
+
+}
+
+.otz-container{
+
+}
+
+.otz-slide{
+
+  p{
+    font-size: 16px;
+    padding-left: 40px;
+    background-position: left top;
+    background-repeat: no-repeat;
+    @media only screen and (min-width: 1200px) {
+      font-size: 20px;
+      padding-left: 60px;
+    }
+  }
+}
+.wrapper-fio{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.body-man__img{
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  border: 1px solid #00CCC2;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.wrapper-fio {
+  margin-top: 23px;
+  @media only screen and (min-width: 1200px) {
+    margin-top: 80px;
+  }
+}
+.body-man{
+  align-self: center;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 10px;
+  align-items: center;
+  }
+
+.otz-address{
+  align-self: center;
+  color: #24A3FF;
+}
+
+.otz-button-next,
+.otz-button-prev{
+   color: #BDBDBD;
+  @media only screen and (max-width: 1200px) {
+    display: none;
+  }
+}
+
+.otz-button-next{
+  right: -105px;
+}
+.otz-button-prev{
+  left: -105px;
+}
+
+.otz-pagination{
+  text-align: center;
+  margin-top: 30px;
+
+  .swiper-pagination-bullet{
+    background:#BDBDBD;
+    width: 5px;
+    height: 5px;
+  }
+  .swiper-pagination-bullet-active{
+    background:#fff;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #00CCC2;
+  }
+}
+
+
+
+
+
+.rating {
+  display: flex;
+  align-items: flex-end;
+  font-size: 22px;
+  line-height: 0.75;
+  transition: opacity 0.3s ease 0s;
+  pointer-events: none;
+  margin-bottom: 10px;
+}
+.rating.rating_sending {
+  opacity: 0.2;
+}
+.rating.rating_set .rating__active,
+.rating.rating_set .rating__item {
+  cursor: pointer;
+}
+
+.rating__body {
+  position: relative;
+}
+.rating__body::before {
+  content: "★★★★★";
+  display: block;
+  color:  #BDBDBD;
+}
+.rating__active {
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+.rating__active::before {
+  content: "★★★★★";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  color: #B8CD39;
+}
+
+.rating__items {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.rating__item {
+  flex: 0 0 20%;
+  height: 100%;
+  opacity: 0;
+}
+.rating__value {
+  font-size: 50%;
+  line-height: 1;
+  padding: 0px 0px 0px 10px;
+}
