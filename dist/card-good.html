@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <title>istcool</title>
-    <link rel="preload" as="style" onload="this.rel='stylesheet'" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!--link(rel="preload" as="style" onload="this.rel='stylesheet'" href="https://unpkg.com/swiper/swiper-bundle.min.css")-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
@@ -143,33 +144,21 @@
       <div class="container">
         <div class="body-slider-info">
           <div class="wrapper-slider-card">
-            <div class="body-slider-little">
-              <div class="swiper-container slider-little-container">
-                <div class="swiper-wrapper slider-little-wrapper">
-                  <div class="swiper-slide slider-little-slide"><img class="swiper-lazy" data-src="img/catalog/card1.png">
-                    <div class="swiper-lazy-preloader"></div>
-                  </div>
-                  <div class="swiper-slide slider-little-slide"><img class="swiper-lazy" data-src="img/catalog/card2.png">
-                    <div class="swiper-lazy-preloader"></div>
-                  </div>
-                  <div class="swiper-slide slider-little-slide"><img class="swiper-lazy" data-src="img/catalog/card3.png">
-                    <div class="swiper-lazy-preloader"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
             <div class="body-slider-large">
               <div class="swiper-container slider-large-container">
                 <div class="swiper-wrapper slider-large-wrapper">
-                  <div class="swiper-slide slider-large-slide"><img class="swiper-lazy" data-src="img/catalog/1.png">
-                    <div class="swiper-lazy-preloader"></div>
-                  </div>
-                  <div class="swiper-slide slider-large-slide"><img class="swiper-lazy" data-src="img/catalog/card2.png">
-                    <div class="swiper-lazy-preloader"></div>
-                  </div>
-                  <div class="swiper-slide slider-large-slide"><img class="swiper-lazy" data-src="img/catalog/card3.png">
-                    <div class="swiper-lazy-preloader"></div>
-                  </div>
+                  <div class="swiper-slide slider-large-slide" style="background-color: #00CCC2;"></div>
+                  <div class="swiper-slide slider-large-slide" style="background-color: #00CCC2;"></div>
+                  <div class="swiper-slide slider-large-slide" style="background-color: #00CCC2;"></div>
+                </div>
+              </div>
+            </div>
+            <div class="body-slider-little">
+              <div class="swiper-container slider-little-container">
+                <div class="swiper-wrapper slider-little-wrapper">
+                  <div class="swiper-slide slider-little-slide" style="background-color: darkgreen;"></div>
+                  <div class="swiper-slide slider-little-slide" style="background-color: darkgreen;"></div>
+                  <div class="swiper-slide slider-little-slide" style="background-color: darkgreen;"></div>
                 </div>
               </div>
             </div>
@@ -214,6 +203,107 @@
             </div>
           </div>
         </div>
+      </div>
+    </section>
+    <section class="sec-tabs">
+      <div class="container">
+        <div class="body-description">
+          <div class="tabs">
+            <div class="tabs__nav tabs-nav">
+              <div class="tabs-nav__item is-active" data-tab-name="tab-1">Дополнительные опции</div>
+              <div class="tabs-nav__item" data-tab-name="tab-2">Доставка</div>
+              <div class="tabs-nav__item" data-tab-name="tab-3">Оплата</div>
+              <div class="tabs-nav__item" data-tab-name="tab-4">Характеристики</div>
+            </div>
+            <div class="tabs__content">
+              <div class="tab-pane tab-1 is-active">
+                <div class="additionaloptions">
+                  <div class="checkbox">
+                    <input class="checkbox__input _req" id="additionaloptions1" type="checkbox" name="additionaloptions">
+                    <label class="checkbox__label" for="additionaloptions1">
+                      <div class="namedop">Освещение для цветочной камеры ISTCOOL</div>
+                      <div class="wrapper-price">
+                        <div class="price-newse">84 051,67 р</div>
+                        <div class="price-olde">84 051,67 р</div>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <input class="checkbox__input _req" id="additionaloptions2" type="checkbox" name="additionaloptions">
+                    <label class="checkbox__label" for="additionaloptions2">
+                      <div class="namedop">Освещение для цветочной камеры ISTCOOL</div>
+                      <div class="wrapper-price">
+                        <div class="price-newse">84 051,67 р</div>
+                        <div class="price-olde">84 051,67 р</div>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <input class="checkbox__input _req" id="additionaloptions3" type="checkbox" name="additionaloptions">
+                    <label class="checkbox__label" for="additionaloptions3">
+                      <div class="namedop">Освещение для цветочной камеры ISTCOOL</div>
+                      <div class="wrapper-price">
+                        <div class="price-newse">84 051,67 р</div>
+                        <div class="price-olde">84 051,67 р</div>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <input class="checkbox__input _req" id="additionaloptions4" type="checkbox" name="additionaloptions">
+                    <label class="checkbox__label" for="additionaloptions4">
+                      <div class="namedop">Освещение для цветочной камеры ISTCOOL</div>
+                      <div class="wrapper-price">
+                        <div class="price-newse">84 051,67 р</div>
+                        <div class="price-olde">84 051,67 р</div>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane tab-2">
+                <div class="delivery-paymant">
+                  <h2>Краснодар</h2>
+                  <p>При покупке с монтажом по Краснодару – бесплатно</p>
+                  <p>При покупке без монтажа по Краснодару – 500 рублей</p>
+                  <p>Самовывоз по адресу: г. Краснодар, ул. Садовая, д. 218 пн.-сб. с9-00 до 18-00, вс. – по предварительной договорённости.</p>
+                  <ul>
+                    <li>По выставленному счёту в отделениях банка или через интернет-банк.</li>
+                    <li>По выставленному счёту в отделениях банка или через интернет-банк.</li>
+                    <li>По выставленному счёту в отделениях банка или через интернет-банк.</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="tab-pane tab-3">
+                <div class="delivery-paymant">
+                  <h2>Краснодар</h2>
+                  <p>При покупке с монтажом по Краснодару – бесплатно</p>
+                  <p>При покупке без монтажа по Краснодару – 500 рублей</p>
+                  <p>Самовывоз по адресу: г. Краснодар, ул. Садовая, д. 218 пн.-сб. с9-00 до 18-00, вс. – по предварительной договорённости.</p>
+                  <ul>
+                    <li>По выставленному счёту в отделениях банка или через интернет-банк.</li>
+                    <li>По выставленному счёту в отделениях банка или через интернет-банк.</li>
+                    <li>По выставленному счёту в отделениях банка или через интернет-банк.</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="tab-pane tab-4">
+                <div class="specifications">
+                  <p>Чиллеры ISTCOOL LCU mini предназначены для охлаждения воды, этиленгликоля и пропиленгликоля.</p>
+                  <p>Чиллеры ISTCOOL LCU mini состоят из ёмкости наполненой этиленгликолем с 30% концентрацией а внутри ёмкости находится трубчатый теплообменник обеспечивающий охлаждение жидкости. Также внутри ёмкости установлена мешалка для поддержания равномерной температуры по всему объёму.</p>
+                  <p>Высококачественные компоненты чиллеров обеспечивают стабильность, долговечность и надежность.</p>
+                  <ul class="catalog-card__list">
+                    <li class="catalog-card__li"><span class="text">Артикул:</span><span class="num">1070001</span></li>
+                    <li class="catalog-card__li"><span class="text">Дополнительные опции:</span><span class="num">Array</span></li>
+                    <li class="catalog-card__li"><span class="text">Холодопроизводительность при температуре кипения to=- 8°C,температура жидкости на выходе из чиллера t=+1°C, Вт:</span><span class="num">400</span></li>
+                    <li class="catalog-card__li"><span class="text">Объёмный расход хладоносителя, м³/ч:</span><span class="num">0,07</span></li>
+                    <li class="catalog-card__li"><span class="text">Объёмный расход хладоносителя, л/мин:</span><span class="num">1,14</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="body-description-mobile"></div>
       </div>
     </section>
     <footer class="footer">
@@ -302,7 +392,6 @@
         </div>
       </div>
     </div>
-    <link rel="preload" as="style" onload="this.rel='stylesheet'" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/script.min.js"></script>

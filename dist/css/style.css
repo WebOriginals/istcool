@@ -2014,48 +2014,212 @@ ul.catalog-card__list {
 }
 
 .wrapper-slider-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+}
+
+.body-slider-large {
+  min-width: 0;
+}
+
+.body-slider-large .slider-large-slide {
+  height: 280px;
+}
+
+.body-slider-large .slider-large-slide img {
+  max-width: 100%;
+}
+
+.body-slider-little {
+  min-width: 0;
+}
+
+.body-slider-little .slider-little-slide {
+  height: 85px;
+}
+
+.body-slider-little .slider-little-slide img {
+  max-width: 100%;
+}
+
+.price-card {
+  margin-bottom: 20px;
+}
+
+.price-card__title {
+  font-size: calc(14px + 0 * ((100vw - 320px) / 1600));
+  color: #C4C4C4;
+  margin-bottom: 5px;
+}
+
+.price-card__all {
   display: flex;
-  flex-wrap: wrap;
+}
+
+.price-card__all .price-card__new {
+  font-weight: bold;
+  font-size: calc(18px + 2 * ((100vw - 320px) / 1600));
+  margin-right: 15px;
+}
+
+.price-card__all .price-card__old {
+  font-weight: bold;
+  font-size: calc(12px + 0 * ((100vw - 320px) / 1600));
+  color: #C4C4C4;
+  align-self: center;
   position: relative;
+}
+
+.price-card__all .price-card__old:after {
+  content: '';
+  position: absolute;
   width: 100%;
+  height: 1px;
+  background-color: #C4C4C4;
+  left: 0;
+  transform: skew(0deg, -7deg) translateY(10px);
 }
 
-.wrapper-slider-card .body-slider-large {
-  width: 100%;
-  position: relative;
+.availability-card {
+  margin-bottom: 15px;
 }
 
-.wrapper-slider-card .body-slider-large .popular-products__sale {
-  left: auto;
-  right: 50px;
-  z-index: 8;
+.availability-card .availability__circle {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  margin-right: 10px;
 }
 
-.wrapper-slider-card .body-slider-large .slider-large-slide .slider-large-slide-img {
-  width: 100%;
-}
-
-.wrapper-slider-card .body-slider-large .slider-large-pagination {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  margin-top: 30px;
-}
-
-.wrapper-slider-card .body-slider-large .slider-large-pagination .swiper-pagination-bullet {
+.availability-card .availability__text {
+  font-size: calc(14px + 0 * ((100vw - 320px) / 1600));
+  font-style: italic;
   align-self: center;
 }
 
-.wrapper-slider-card .body-slider-little {
+.availability-card .availability__yes {
+  display: flex;
+  color: #02C30E;
+}
+
+.availability-card .availability__yes .availability__circle {
+  background-color: #02C30E;
+}
+
+.availability-card .availability__no {
+  display: flex;
+  color: #C30202;
+}
+
+.availability-card .availability__no .availability__circle {
+  background-color: #C30202;
+}
+
+.descriprion-card span {
+  font-size: calc(14px + 2 * ((100vw - 320px) / 1600));
+}
+
+.quantity-card .card-info__number {
+  border: 1px solid #C4C4C4;
+  width: 73px;
+  padding: 5px;
+}
+
+.wrapper-btn .info__btn {
+  margin-right: 25px;
+}
+
+.sec-tabs .tabs-nav__item {
+  font-size: calc(18px + 2 * ((100vw - 320px) / 1600));
+}
+
+.sec-tabs .tabs-nav__item.is-active {
+  font-weight: bold;
+  color: #023E5A;
+  text-decoration: underline;
+  padding: 15px 40px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  position: relative;
+}
+
+.sec-tabs .tabs-nav__item.is-active:after {
+  content: '';
+  position: absolute;
+  bottom: -16px;
+  left: 0;
+  width: 100%;
+  height: 16px;
+  background-color: #FFFFFF;
+  z-index: 5;
+}
+
+.sec-tabs .tabs__content {
+  z-index: 2;
+  padding: 35px 30px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.sec-tabs .tabs__content {
+  margin-top: 5px;
+}
+
+.specifications p {
+  font-size: calc(14px + 2 * ((100vw - 320px) / 1600));
+  margin-bottom: 20px;
+}
+
+.specifications span {
+  font-size: calc(14px + 2 * ((100vw - 320px) / 1600));
+}
+
+.additionaloptions .checkbox__label {
   width: 100%;
 }
 
-.wrapper-slider-card .body-slider-little .slider-little-container {
-  height: 80px;
+.additionaloptions .checkbox__label .namedop {
+  margin-right: 55px;
 }
 
-.wrapper-slider-card .body-slider-little .slider-little-slide img {
-  width: 80px;
+.additionaloptions .checkbox__label .price-newse {
+  margin-right: 10px;
+}
+
+.additionaloptions .checkbox__label:before {
+  margin: 22px 10px 0 0;
+}
+
+.additionaloptions .checkbox__label:after {
+  margin-top: 21px;
+}
+
+.delivery-paymant h2 {
+  font-size: calc(16px + 2 * ((100vw - 320px) / 1600));
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.delivery-paymant p {
+  font-size: calc(14px + 2 * ((100vw - 320px) / 1600));
+  margin-bottom: 15px;
+}
+
+.delivery-paymant ul li {
+  padding-left: 25px;
+  position: relative;
+}
+
+.delivery-paymant ul li:before {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 0;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: #023E5A;
 }
 
 @media only screen and (min-width: 320px) {
@@ -2191,15 +2355,6 @@ ul.catalog-card__list {
 
   .wrapper-promo {
     grid-template-columns: 120px 210px 1fr;
-  }
-
-  .wrapper-slider-card .body-slider-large {
-    width: 100%;
-  }
-
-  .wrapper-slider-card {
-    width: 46%;
-    padding-right: 30px;
   }
 }
 
@@ -2395,17 +2550,23 @@ ul.catalog-card__list {
   }
 
   .body-slider-info {
-    grid-template-columns: 1fr 2fr;
-  }
-
-  .wrapper-slider-card .body-slider-large .slider-large-slide .slider-large-slide-img {
-    width: 75%;
-    margin: auto;
-    display: block;
+    grid-template-columns: 1fr 1fr;
   }
 
   .wrapper-slider-card {
-    width: 56%;
+    grid-template-columns: 95px 1fr;
+  }
+
+  .body-slider-large .slider-large-slide {
+    height: 335px;
+  }
+
+  .body-slider-little {
+    grid-area: -1;
+  }
+
+  .body-slider-little .slider-little-slide {
+    height: 95px !important;
   }
 }
 
@@ -2537,27 +2698,6 @@ ul.catalog-card__list {
 
   .wrapper-catalog-items {
     grid-template-columns: 236px 236px 236px;
-  }
-
-  .wrapper-slider-card .body-slider-large .slider-large-slide .slider-large-slide-img {
-    width: 100%;
-  }
-
-  .wrapper-slider-card .body-slider-large {
-    width: 70%;
-  }
-
-  .wrapper-slider-card .body-slider-little {
-    width: 30%;
-  }
-
-  .wrapper-slider-card .body-slider-little .slider-little-container {
-    width: 90px;
-    height: 470px;
-  }
-
-  .wrapper-slider-card {
-    width: 60%;
   }
 }
 
@@ -2810,10 +2950,6 @@ ul.catalog-card__list {
 
   .catalog-card__btn {
     width: 100%;
-  }
-
-  .wrapper-slider-card .body-slider-little {
-    display: none;
   }
 }
 
