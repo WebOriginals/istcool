@@ -1,4 +1,5 @@
 //ОСНОВНЫЕ СТИЛИ
+@import "fonts.scss";
 @import "defuld/mixins.scss";
 @import "defuld/reset_style.scss";
 @import "defuld/fonts";
@@ -48,6 +49,14 @@
 //page catalog
 @import "catalog/card.scss";
 @import "catalog/seo-text.scss";
+@import "catalog/second-level.scss";
+@import "catalog/saitbar.scss";
+@import "catalog/catalog.scss";
+
+
+//page catalog
+@import "card-good/slider-info.scss";
+@import "card-good/additionalOptions.scss";
 
 
 

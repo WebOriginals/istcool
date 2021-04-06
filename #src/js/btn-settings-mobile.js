@@ -1,14 +1,11 @@
-if( $( '.sorting-settings-block__settings-wr' ).length ) {
-    $(".sorting-settings-block__settings-wr").click(function () {
-
-        $('.saitbar').addClass("settings-open");
-        $('.btn-close-sitings').addClass("btn-close-sitings-open");
+if( $( '.wrapper-btn-filter' ).length ) {
+    $(".wrapper-btn-filter").click(function () {
+        $('.body-saitbar').addClass("body-saitbar-open");
         $('body').addClass('no-scroll');
     });
-    $(".btn-close-sitings").click(function () {
 
-        $('.btn-close-sitings').removeClass("btn-close-sitings-open");
-        $('.saitbar').removeClass("settings-open");
+    $(".close-btn-saitbar").click(function () {
+        $('.body-saitbar').removeClass("body-saitbar-open");
         $('body').removeClass('no-scroll');
     });
 }

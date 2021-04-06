@@ -212,7 +212,11 @@ document.addEventListener('keydown', function (e) {
     }
     tab();
 };
-    
+    if( $( '.catalog-sort' ).length ) {
+    if (window.screen.width <= 1240) {
+        $('.catalog-sort').html("ценa ↑");
+    }
+}
 
 ( function( $ ){
 
@@ -499,8 +503,62 @@ document.addEventListener('keydown', function (e) {
         }
     });
 }
+    if( $( '.slider-little-container' ).length ) {
+    var sliderLlittle = new Swiper('.slider-little-container', {
+        slidesPerView: 1,
+        spaceBetween: 15,
+        loop:true,
+        lazy: true,
+        slideToClickedSlide:true,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+        breakpoints: {
+            767: {
+                direction: 'horizontal',
+                slidesPerView: 3,
+            },
+
+            1280: {
+                direction: 'vertical',
+                slidesPerView: 3,
+            },
+        }
+    });
+
+    if(window.screen.width>=767) {
+        var sliderLarge = new Swiper('.slider-large-container', {
+            lazy: true,
+            thumbs: {
+                swiper: sliderLlittle
+            }
+        });
+    } else {
+        var sliderLarge = new Swiper('.slider-large-container', {
+            lazy: true,
+            pagination: {
+                el: '.slider-large-pagination',
+                clickable: true,
+            },
+        });
+    }
+};
+
+
+
     // end sliders
 
+
+    if( $( '.wrapper-btn-filter' ).length ) {
+    $(".wrapper-btn-filter").click(function () {
+        $('.body-saitbar').addClass("body-saitbar-open");
+        $('body').addClass('no-scroll');
+    });
+
+    $(".close-btn-saitbar").click(function () {
+        $('.body-saitbar').removeClass("body-saitbar-open");
+        $('body').removeClass('no-scroll');
+    });
+}
 
     //меню
     parameters = {

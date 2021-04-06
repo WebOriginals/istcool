@@ -1,4 +1,8 @@
-
+if( $( '.catalog-sort' ).length ) {
+    if (window.screen.width <= 1240) {
+        $('.catalog-sort').html("ценa ↑");
+    }
+}
 
 ( function( $ ){
 

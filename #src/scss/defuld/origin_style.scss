@@ -7,11 +7,12 @@ $color_5: #FE9D45;
 $color_6: #C4C4C4;
 $color_7: #F9CA00;
 $color_8: #EA524E;
+$color_9: rgba(0, 81, 118, 0.2);
 $link-img: '';
 
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Cera Pro";
   color: $color_2;
   font-weight: 400;
   min-height: 100vh;
@@ -126,21 +127,24 @@ a{
   @include mq('desktop') {
     max-width: 1045px;
   }
+  //@include mq('2.5K') {
+  //  max-width: 1345px;
+  //}
 }
 
-.square{
-
-  li{
-    @if ($link-img == '') {
-      background-image: url("./../img/ic/square.svg");
-    } @else {
-      background-image: url($link-img + "/img/ic/square.svg");
-    }
-    padding-left: 30px;
-    background-position: left;
-    background-repeat: no-repeat;
-  }
-}
+//.square{
+//
+//  li{
+//    @if ($link-img == '') {
+//      background-image: url("./../img/ic/square.svg");
+//    } @else {
+//      background-image: url($link-img + "/img/ic/square.svg");
+//    }
+//    padding-left: 30px;
+//    background-position: left;
+//    background-repeat: no-repeat;
+//  }
+//}
 .d-none{
   display: none;
 }
@@ -183,4 +187,9 @@ a{
     }
   }
 
+}
+
+.no-scroll {
+  height: 100vh;
+  overflow: hidden;
 }

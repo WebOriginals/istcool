@@ -21,8 +21,11 @@ $( document ).ready(function() {
     @@include('sliders/pageMain-news-sl.js')
     @@include('sliders/pageMain-articles-sl.js')
     @@include('sliders/pageMain-hit-sl.js')
+    @@include('sliders/pageCardGood-sl.js')
     // end sliders
 
+
+    @@include('btn-settings-mobile.js')
 
     //меню
     @@include('menu.js')
