@@ -114,3 +114,36 @@ padding: 20px 0;
     background-repeat: no-repeat;
   }
 }
+
+.body-header-top,
+.body-header-middle,
+.body-header-bottom{
+  @include maq('tablet-wide') {
+    display: none;
+  }
+}
+
+.body-header-mobile{
+  padding: 20px 0;
+
+  @include mq('tablet-wide') {
+    display: none;
+  }
+}
+
+.wrapper-header-mobile{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  .wrapper-logo{
+    flex: 0 0 126px;
+    .logo{
+      width: 100%;
+      img{
+        max-width: 100%;
+      }
+    }
+  }
+}
+
