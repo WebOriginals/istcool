@@ -1117,6 +1117,18 @@ body.lock {
   padding: 20px 0 30px;
 }
 
+.card-catalog-el__img {
+  border: 1px solid #FFFFFF;
+}
+
+.card-catalog-el:hover .card-catalog-el__img {
+  border: 1px solid #023E5A;
+}
+
+.card-catalog-el:hover .card-catalog-el__title {
+  color: #023E5A;
+}
+
 .sec-advantages {
   padding: 30px 0 30px;
 }

@@ -14,3 +14,18 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
+
+.card-catalog-el__img{
+  border: 1px solid $color_1;
+}
+
+.card-catalog-el{
+  &:hover{
+    .card-catalog-el__img{
+      border: 1px solid $color_3;
+    }
+    .card-catalog-el__title{
+      color: $color_3;
+    }
+  }
+}
