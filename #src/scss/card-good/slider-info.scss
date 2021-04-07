@@ -25,12 +25,16 @@
 
   .slider-large-slide {
     height: 280px;
+    display: flex;
+    justify-content: center;
     @include mq('tablet-wide') {
       height: 335px;
     }
 
     img {
       max-width: 100%;
+      align-self: center;
+
     }
   }
 
@@ -51,6 +55,9 @@
 
     img {
       max-width: 100%;
+      @include maq('tablet-wide') {
+        max-width: 80%;
+      }
     }
   }
 }
@@ -135,8 +142,20 @@
   }
 }
 
-.wrapper-btn{
+.wrapper-btn.card{
   .info__btn{
     margin-right: 25px;
+  }
+  width: 100%;
+  flex-wrap: wrap;
+  @include maq('tablet') {
+    .info__btn{
+      width: 100%;
+      margin-bottom: 15px;
+      margin-right: 0;
+    }
+    .info__btn-org{
+      width: 100%;
+    }
   }
 }

@@ -1,35 +1,44 @@
 .sec-tabs{
-  .tabs-nav__item{
-    @include adaptiv-font(20,18);
+  padding: 10px 0 90px;
+  .tabs-nav__item {
+    @include adaptiv-font(20, 18);
   }
-  .tabs-nav__item.is-active{
+  .tabs-nav__item.is-active {
     font-weight: bold;
     color: $color_3;
     text-decoration: underline;
-    padding: 15px 40px;
-    background: #FFFFFF;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-    position: relative;
 
-    &:after{
-      content: '';
-      position: absolute;
-      bottom: -16px;
-      left: 0;
-      width: 100%;
-      height: 16px;
-      background-color: $color_1;
-      z-index: 5;
+  }
+  @include mq('tablet-wide') {
+    .tabs-nav__item.is-active {
+      font-weight: bold;
+      color: $color_3;
+      text-decoration: underline;
+      padding: 15px 40px;
+      background: #FFFFFF;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+      position: relative;
+
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: -16px;
+        left: 0;
+        width: 100%;
+        height: 16px;
+        background-color: $color_1;
+        z-index: 5;
+      }
     }
-  }
-  .tabs__content{
-    z-index: 2;
-    padding: 35px 30px;
-    background: #FFFFFF;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-  }
-  .tabs__content {
-    margin-top: 5px;
+    .tabs__content {
+      z-index: 2;
+      padding: 35px 30px;
+      background: #FFFFFF;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    }
+    .tabs__content {
+      margin-top: 5px;
+    }
   }
 }
 .specifications{
@@ -40,6 +49,12 @@
   span{
     @include adaptiv-font(16,14);
   }
+  .specifications__title{
+    font-weight: bold;
+    @include adaptiv-font(18,18);
+    margin-bottom: 20px;
+  }
+
 }
 
 .additionaloptions{
@@ -89,6 +104,32 @@
         height: 10px;
         background-color: $color_3;
       }
+    }
+  }
+}
+
+
+.body-description{
+  display: none;
+  @include mq('tablet-wide') {
+    display: block;
+  }
+}
+
+.body-description-mobile{
+  @include mq('tablet-wide') {
+    display: none;
+  }
+  .specifications{
+    margin-bottom: 50px;
+  }
+  .dropDownList-title{
+    color: $color_2;
+    font-weight: bold;
+    @include adaptiv-font(18,18);
+    &.open{
+      text-decoration: underline;
+      color: $color_3;
     }
   }
 }
