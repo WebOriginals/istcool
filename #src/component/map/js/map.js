@@ -19,7 +19,7 @@ if ($('#map').length) {
         var myPlacemark = new ymaps.Placemark([45.350942, 39.058194], {}, {
             iconLayout: 'default#image',
             iconImageHref: './../../img/ic/point-map.svg',
-            iconImageSize: [30, 42],
+            iconImageSize: [32, 32],
             iconImageOffset: [-15, -40]
         });
 

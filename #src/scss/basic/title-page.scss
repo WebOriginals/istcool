@@ -1,6 +1,10 @@
-.sec-title{
-  padding: 30px 0 10px;
+.sec-title-page{
+  padding: 30px 0 30px;
   @include mq('desktop') {
-    padding: 85px 0 0;
+    padding: 40px 0 40px;
   }
+}
+
+.title-page{
+  @include adaptiv-font(36,24);
 }

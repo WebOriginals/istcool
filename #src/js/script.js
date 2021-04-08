@@ -11,6 +11,7 @@ $( document ).ready(function() {
     @@include('../component/InputList/js/InputList.js')
     @@include('../component/dropDownLlist/js/dropDownList.js')
     @@include('../component/Quantity/js/quantity.js')
+    @@include('../component/map/js/map.js')
     // end component
 
 

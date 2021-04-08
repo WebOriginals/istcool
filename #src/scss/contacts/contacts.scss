@@ -1,0 +1,42 @@
+.sec-contacts{
+  padding: 0 0 80px;
+  @include mq('tablet-wide') {
+    padding: 0 0 130px;
+  }
+}
+
+.body-contacts{
+  display: grid;
+  grid-gap: 30px;
+  @include mq('tablet-wide') {
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 50px;
+  }
+}
+
+.wrapper-block-info{
+  &:not(:last-child){
+    @include adaptiv-margin-bottom(40,25);
+  }
+
+  .block-info__title{
+    display: grid;
+    grid-template-columns: 28px 1fr;
+    grid-gap: 20px;
+
+    .info-title__title{
+     font-size: 16px;
+      font-weight: 500;
+    }
+  }
+  .block-text{
+    margin: 10px 0 0 50px;
+    a{
+      display: block;
+    }
+  }
+}
+
+.contacts__map{
+  min-height: 320px;
+}

@@ -9,7 +9,7 @@
 @import "../component/dropDownLlist/scss/dropDownLlist.scss";
 @import "../component/Tabs/scss/tabs.scss";
 @import "../component/InputList/scss/InpuList.scss";
-//@import "../component/map/scss/map.scss";
+@import "../component/map/scss/map.scss";
 @import "../component/Modals/scss/modals.scss";
 @import "../component/Quantity/scss/quantity.scss";
 
@@ -53,10 +53,13 @@
 @import "catalog/saitbar.scss";
 @import "catalog/catalog.scss";
 
-
 //page catalog
 @import "card-good/slider-info.scss";
 @import "card-good/additionalOptions.scss";
+
+//page contacts
+@import "contacts/contacts.scss";
+
 
 
 
