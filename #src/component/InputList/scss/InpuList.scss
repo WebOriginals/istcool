@@ -35,9 +35,9 @@
   height: 13px;
   margin-top: -3.5px;
   @if ($link-img == '') {
-    background-image: url("./../../../img/ic/input-arrow.svg");
+    background-image: url("./../../../img/ic/saidbar-arrow-d.svg");
   } @else {
-    background-image: url($link-img + "/img/ic/arrow-black.svg");
+    background-image: url($link-img + "/img/ic/saidbar-arrow-d.svg");
   }
   background-repeat: no-repeat;
   -webkit-background-size: contain;
@@ -47,9 +47,9 @@
 
 .transfotm .wrapper-input:before {
   @if ($link-img == '') {
-    background-image: url("./../../../img/ic/input-arrowUp.svg");
+    background-image: url("./../../../img/ic/saidbar-arrow-u.svg");
   } @else {
-    background-image: url($link-img + "/img/ic/input-arrowUp.svg");
+    background-image: url($link-img + "/img/ic/saidbar-arrow-u.svg");
   }
 }
 

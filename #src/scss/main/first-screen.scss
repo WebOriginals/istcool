@@ -7,9 +7,14 @@
 }
 
 .first-slide{
-
+  display: flex;
+  justify-content: center;
   img{
     max-width: 100%;
   }
+  .swiper-lazy-preloader{
+    margin: auto;
+  }
 }
+
 

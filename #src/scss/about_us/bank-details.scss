@@ -1,0 +1,16 @@
+.sec-about-us-bank-details{
+  padding: 50px 0 80px;
+
+}
+.body-about-us-bank-details{
+  h3{
+    @include adaptiv-font(18,16);
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+  h2{
+    font-weight: 400;
+    @include adaptiv-font(36,24);
+    @include adaptiv-margin-bottom(40,20);
+  }
+}

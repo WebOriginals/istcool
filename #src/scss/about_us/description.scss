@@ -1,0 +1,48 @@
+.sec-about-us-description{
+  padding: 0 0 50px;
+}
+
+.body-about-us-description{
+  p{
+    @include adaptiv-font(18,16);
+    margin-bottom: 20px;
+  }
+  ul{
+    margin-bottom: 20px;
+    li{
+      padding-left: 25px;
+      position: relative;
+      &:not(:last-child){
+        margin-bottom: 10px;
+      }
+
+      &:before{
+        content: '';
+        position: absolute;
+        top: 8px;
+        left: 0;
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        background-color: $color_3;
+      }
+    }
+  }
+  h2{
+    @include adaptiv-font(24,22);
+    margin-bottom: 20px;
+    font-weight: 500;
+  }
+  h3{
+    font-weight: 500;
+    @include adaptiv-font(22,20);
+    margin-bottom: 20px;
+  }
+
+}
+.wrapper-about-us-description__img{
+
+  img{
+    max-width: 100%;
+  }
+}

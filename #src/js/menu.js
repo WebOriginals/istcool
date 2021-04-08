@@ -18,6 +18,8 @@ if( $( '.body-header-mobile' ).length ) {
             $('.btn-settings').removeClass("active");
             $('.wraper-menusecond').removeClass("active");
             $('.third-level').removeClass("active");
+            $('.logo-ic').removeClass("hide-img-logo");
+            $('.link-back').removeClass("show-link-back");
 
         }
     });
@@ -41,7 +43,7 @@ if( $( '.body-header-mobile' ).length ) {
             var ul = $(block).find('.third-level');
             $(block).toggleClass("open");
             $(ul).addClass("active");
-                           
+
         });
         $(".link-back").click(function () {
 
