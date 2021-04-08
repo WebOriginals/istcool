@@ -88,6 +88,7 @@ padding: 20px 0;
   a{
     display: block;
     padding:0 6px;
+    position: relative;
 
     &:first-child{
       border-right: 1px solid $color_2;
@@ -100,6 +101,23 @@ padding: 20px 0;
     }
     .mt{
       margin-top: 10px;
+    }
+    .col-vo-goods{
+      width: 20px;
+      height: 20px;
+      //background: #00CCC2;
+      position: absolute;
+      bottom: 2px;
+      right: 5px;
+      display: flex;
+      justify-content: center;
+      @include maq('tablet-wide') {
+        bottom: 2px;
+      }
+      span{
+        @include adaptiv-font(10,10);
+        align-self: center;
+      }
     }
   }
 }

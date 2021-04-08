@@ -127,11 +127,12 @@
 /*конец кнопки*/
 
 .link-menu {
-  font-size: 18px;
+  font-size: 20px;
   position: relative;
 
   @include maq('tablet') {
-    margin-bottom: 10px;
+    padding: 5px;
+    margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -149,6 +150,7 @@
   .ic-m1, .ic-m2 {
     width: 10px;
     height: 12px;
+    align-self: center;
     @if ($link-img == '') {
       background-image: url("./../../img/ic/mobile-sec.svg");
     } @else {
@@ -161,7 +163,7 @@
   .second-menu, .path-menu {
     padding-bottom: 3px;
     transition: .3s;
-    @include adaptiv-font(18, 16);
+    @include adaptiv-font(18, 18);
     color: $color_1;
     cursor: pointer;
     @include maq('tablet-wide') {
@@ -528,7 +530,7 @@
 }
 
 .memu-easy-li {
-  @include adaptiv-font(14, 14);
+  @include adaptiv-font(14, 18);
 }
 
 .second-ul__title {

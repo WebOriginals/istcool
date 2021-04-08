@@ -653,6 +653,7 @@ body.lock {
 .wrapper-lk-basket a {
   display: block;
   padding: 0 6px;
+  position: relative;
 }
 
 .wrapper-lk-basket a:first-child {
@@ -667,6 +668,21 @@ body.lock {
 
 .wrapper-lk-basket a .mt {
   margin-top: 10px;
+}
+
+.wrapper-lk-basket a .col-vo-goods {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  bottom: 2px;
+  right: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper-lk-basket a .col-vo-goods span {
+  font-size: calc(10px + 0 * ((100vw - 320px) / 1600));
+  align-self: center;
 }
 
 .body-header-bottom {
@@ -799,7 +815,7 @@ body.lock {
 /*конец кнопки*/
 
 .link-menu {
-  font-size: 18px;
+  font-size: 20px;
   position: relative;
 }
 
@@ -807,6 +823,7 @@ body.lock {
 .link-menu .ic-m2 {
   width: 10px;
   height: 12px;
+  align-self: center;
   background-image: url("./../../img/ic/mobile-sec.svg");
   background-position: center center;
   background-repeat: no-repeat;
@@ -816,7 +833,7 @@ body.lock {
 .link-menu .path-menu {
   padding-bottom: 3px;
   transition: .3s;
-  font-size: calc(16px + 2 * ((100vw - 320px) / 1600));
+  font-size: calc(18px + 0 * ((100vw - 320px) / 1600));
   color: #FFFFFF;
   cursor: pointer;
 }
@@ -1023,7 +1040,7 @@ body.lock {
 }
 
 .memu-easy-li {
-  font-size: calc(14px + 0 * ((100vw - 320px) / 1600));
+  font-size: calc(18px + -4 * ((100vw - 320px) / 1600));
 }
 
 .second-ul__title {
@@ -3122,6 +3139,10 @@ ul.catalog-card__list {
     text-align: center;
   }
 
+  .wrapper-lk-basket a .col-vo-goods {
+    bottom: 2px;
+  }
+
   .body-header-top,
   .body-header-middle,
   .body-header-bottom {
@@ -3201,7 +3222,8 @@ ul.catalog-card__list {
 
 @media only screen and (max-width: 767px) {
   .link-menu {
-    margin-bottom: 10px;
+    padding: 5px;
+    margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
