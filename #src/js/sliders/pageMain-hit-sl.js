@@ -1,11 +1,11 @@
-if( $( '.hit-container' ).length ) {
+if ($('.hit-container').length) {
     var swiper = new Swiper('.hit-container', {
         slidesPerView: 1,
         spaceBetween: 15,
         lazy: true,
-        observer:true,
-        observeSlideChildren:true,
-        observeParents:true,
+        observer: true,
+        observeSlideChildren: true,
+        observeParents: true,
 
         breakpoints: {
 
@@ -30,3 +30,9 @@ if( $( '.hit-container' ).length ) {
         }
     });
 }
+
+
+
+
+
+

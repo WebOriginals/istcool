@@ -34,6 +34,7 @@ if( $( '.body-header-mobile' ).length ) {
             $(ul).addClass("active");
             $('.logo-ic').toggleClass("hide-img-logo");
             $('.link-back').toggleClass("show-link-back");
+            $('.wrapper-menu').addClass("no-scroll");
 
         });
 
@@ -57,6 +58,7 @@ if( $( '.body-header-mobile' ).length ) {
                 $('.wraper-menusecond').removeClass("active");
                 $('.logo-ic').toggleClass("hide-img-logo");
                 $('.link-back').toggleClass("show-link-back");
+                $('.wrapper-menu').removeClass("no-scroll");
             }
         });
     }

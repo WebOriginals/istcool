@@ -6,7 +6,7 @@
 }
 .articles-container{
   @include mq('tablet-wide') {
-
+padding-right: 3px;
   }
 }
 .articles-wrapper{
@@ -17,6 +17,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 30px;
     padding-bottom: 7px;
+
   }
 
 }
@@ -76,4 +77,8 @@
   font-weight: 500;
   @include adaptiv-font(14,12);
   margin-top: auto;
+}
+
+.articles-pagination{
+  margin-top: 20px;
 }

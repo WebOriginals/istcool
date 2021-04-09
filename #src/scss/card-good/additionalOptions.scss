@@ -2,6 +2,7 @@
   padding: 10px 0 90px;
   .tabs-nav__item {
     @include adaptiv-font(20, 18);
+    font-weight: bold;
   }
   .tabs-nav__item.is-active {
     font-weight: bold;

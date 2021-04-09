@@ -18,7 +18,9 @@
   }
 }
 .contact-btn{
-  margin-right: 40px;
+  @include mq('tablet') {
+    margin-right: 40px;
+  }
 }
 .wrapper-all-input-text{
   display: grid;
