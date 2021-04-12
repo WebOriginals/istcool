@@ -107,13 +107,18 @@ padding: 20px 0;
       height: 20px;
       //background: #00CCC2;
       position: absolute;
-      bottom: 2px;
-      right: 5px;
+      bottom: 1px;
+      right: 6px;
       display: flex;
       justify-content: center;
+      @include mq('2.5K') {
+        bottom: 2px;
+        right: 5px;
+      }
       @include maq('tablet-wide') {
         bottom: 2px;
       }
+
       span{
         @include adaptiv-font(10,10);
         align-self: center;

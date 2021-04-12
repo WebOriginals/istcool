@@ -674,8 +674,8 @@ body.lock {
   width: 20px;
   height: 20px;
   position: absolute;
-  bottom: 2px;
-  right: 5px;
+  bottom: 1px;
+  right: 6px;
   display: flex;
   justify-content: center;
 }
@@ -826,6 +826,10 @@ body.lock {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 20px;
+}
+
+.text-footer {
+  font-size: 12px;
 }
 
 /*конец кнопки*/
@@ -2464,6 +2468,35 @@ ul.catalog-card__list {
   margin-bottom: calc(20px + 20 * ((100vw - 320px) / 1600));
 }
 
+.stocks-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 30px;
+  margin-bottom: 40px;
+}
+
+.stocks-card__picture {
+  width: 100%;
+  padding-top: 80%;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.stocks-card__title {
+  font-size: calc(22px + 2 * ((100vw - 320px) / 1600));
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.stocks-card__text {
+  font-size: calc(16px + 2 * ((100vw - 320px) / 1600));
+  margin-bottom: 20px;
+}
+
+.stocks-card__more {
+  text-decoration: underline;
+}
+
 @media only screen and (min-width: 320px) {
   .wrapper-ic-header a:not(:last-child) {
     margin-right: 20px;
@@ -2609,6 +2642,10 @@ ul.catalog-card__list {
 
   .wrapper-promo {
     grid-template-columns: 120px 210px 1fr;
+  }
+
+  .stocks-card {
+    grid-template-columns: 237px 1fr;
   }
 }
 
@@ -2875,6 +2912,11 @@ ul.catalog-card__list {
     grid-template-columns: 1fr 2fr;
     grid-gap: 50px;
   }
+
+  .stocks-card__picture {
+    padding-top: 100%;
+    min-height: 280px;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -3048,6 +3090,13 @@ ul.catalog-card__list {
 @media only screen and (min-width: 1800px) {
   .wrapper-descrop-menu .wrapper-descrop-menu__top li:not(:last-child) {
     margin-right: 30px;
+  }
+}
+
+@media only screen and (min-width: 2500px) {
+  .wrapper-lk-basket a .col-vo-goods {
+    bottom: 2px;
+    right: 5px;
   }
 }
 

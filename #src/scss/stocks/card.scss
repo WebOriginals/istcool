@@ -1,0 +1,39 @@
+.stocks-card{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 30px;
+  margin-bottom: 40px;
+  @include mq('tablet') {
+    grid-template-columns: 237px 1fr;
+  }
+}
+
+.stocks-card__picture{
+  width: 100%;
+  padding-top: 80%;
+  background-position: center top;
+  background-repeat: no-repeat;
+  @include mq('tablet-wide') {
+    padding-top: 100%;
+    min-height: 280px;
+  }
+}
+
+.stocks-card__description{
+
+}
+
+.stocks-card__title{
+  @include adaptiv-font(24,22);
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.stocks-card__text{
+  @include adaptiv-font(18,16);
+  margin-bottom: 20px;
+}
+
+.stocks-card__more{
+  text-decoration: underline;
+}
