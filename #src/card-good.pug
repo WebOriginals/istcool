@@ -1,4 +1,4 @@
-//- index.pug
+include pug/mixins
 doctype html
 html(lang="ru")
     head
@@ -11,7 +11,7 @@ html(lang="ru")
 
     body
         include pug/basic/header
-        include pug/title-page
+        +title('Карточка товара')
         include pug/card-good/slider-info
         include pug/card-good/additionalOptions
 

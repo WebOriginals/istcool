@@ -1,4 +1,4 @@
-//- index.pug
+include pug/mixins
 doctype html
 html(lang="ru")
     head
@@ -9,7 +9,7 @@ html(lang="ru")
 
     body
         include pug/basic/header
-        include pug/title-page
+        +title('о компании')
         include pug/about_us/description
         include pug/about_us/bank-details
 
