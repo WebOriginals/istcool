@@ -51,15 +51,10 @@ padding: 20px 0;
 
 .header-search{
   width: 100%;
-  padding: 3px 20px 3px 3px;
+  padding: 3px 25px 3px 3px;
   background-position: 98% center;
   background-repeat: no-repeat;
   border: 1px solid $color_6;
-  @if ($link-img == '') {
-    background-image: url("./../../img/ic/search.svg");
-  } @else {
-    background-image: url($link-img + "/img/ic/search.svg");
-  }
 }
 
 .wrapper-phone-soc{
@@ -191,5 +186,14 @@ padding: 20px 0;
       display: block;
       margin-bottom: 10px;
     }
+  }
+}
+.wrapper-search{
+  position: relative;
+  .header-search-ic{
+    top: 7px;
+    right: 5px;
+    position: absolute;
+    cursor: pointer;
   }
 }
