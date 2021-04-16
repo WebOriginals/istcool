@@ -8,6 +8,7 @@ $color_6: #C4C4C4;
 $color_7: #F9CA00;
 $color_8: #EA524E;
 $color_9: rgba(0, 81, 118, 0.2);
+//$link-img: '';
 $link-img: '/bitrix/templates/labsales/';
 
 
@@ -23,7 +24,7 @@ body {
 
 //-----------Кнопка основная------------------
 
-.button{
+.button,.btn-buy{
   background: $color_3;
   color: $color_1;
   text-align: center;
@@ -192,4 +193,18 @@ a{
 .no-scroll {
   height: 100vh;
   overflow: hidden !important;
+}
+
+.popup-window-titlebar-text{
+  font-size: 22px;
+}
+
+.popup-window-content{
+  p{
+    margin-top: 15px;
+    font-size: 18px;
+  }
+}
+.popup-window-content-white{
+  padding: 23px 30px 23px !important;
 }

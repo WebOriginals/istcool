@@ -6,12 +6,12 @@
 }
   .popular-wrapper{
   @include mq('desktop') {
-    display: grid;
+    display: grid !important;
     grid-gap: 30px;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr !important;
   }
   @include mq('desktop1350') {
-    grid-template-columns:  repeat(4,  231px);
+    grid-template-columns:  repeat(4,  231px) !important;
   }
 }
 
@@ -29,5 +29,24 @@
     }
   }
 }
+
+.popular-slide{
+  height: auto;
+  .card-catalog-el{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .card-catalog-el__img{
+
+    margin: auto;
+    img{
+      max-width: 100%;
+    }
+  }
+}
+
 
 

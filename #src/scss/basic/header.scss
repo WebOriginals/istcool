@@ -13,6 +13,7 @@ padding: 20px 0;
 
 .header-toop__address{
   @include adaptiv-font(12,10);
+  flex: 0 0 200px;
 }
 
 .wrapper-menu-header-top{
@@ -111,7 +112,9 @@ padding: 20px 0;
         right: 5px;
       }
       @include maq('tablet-wide') {
-        bottom: 2px;
+        bottom: 4px;
+        width: 18px;
+        height: 16px;
       }
 
       span{
