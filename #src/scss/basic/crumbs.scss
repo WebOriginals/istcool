@@ -1,0 +1,19 @@
+.sec-crumbs-page{
+  padding: 40px 0 5px;
+  @include mq('desktop') {
+    padding: 70px 0 10px;
+  }
+}
+
+.body-crumbs{
+
+  ul{
+  display: flex;
+  width: 100%;
+    li{
+      margin-right: 5px;
+      color: $color_3;
+
+    }
+  }
+}

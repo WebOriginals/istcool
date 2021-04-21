@@ -1123,11 +1123,26 @@ body.lock {
 }
 
 .sec-title-page {
-  padding: 30px 0 30px;
+  padding: 5px 0 30px;
 }
 
 .title-page {
   font-size: calc(24px + 12 * ((100vw - 320px) / 1600));
+  line-height: .8;
+}
+
+.sec-crumbs-page {
+  padding: 40px 0 5px;
+}
+
+.body-crumbs ul {
+  display: flex;
+  width: 100%;
+}
+
+.body-crumbs ul li {
+  margin-right: 5px;
+  color: #023E5A;
 }
 
 .body-cooki {
@@ -3034,7 +3049,11 @@ ul.catalog-card__list {
   }
 
   .sec-title-page {
-    padding: 40px 0 40px;
+    padding: 10px 0 40px;
+  }
+
+  .sec-crumbs-page {
+    padding: 70px 0 10px;
   }
 
   .popular-wrapper {
