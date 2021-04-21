@@ -1145,6 +1145,50 @@ body.lock {
   color: #023E5A;
 }
 
+.body-pagination {
+  padding: 50px 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.ul-pagination {
+  display: flex;
+}
+
+.ul-pagination li {
+  display: flex;
+  width: 30px;
+  justify-content: center;
+  margin-right: 5px;
+}
+
+.ul-pagination li:nth-child(4),
+.ul-pagination li:hover:nth-child(4) {
+  border: none;
+  line-height: 2.1;
+}
+
+.ul-pagination li.active,
+.ul-pagination li:hover {
+  border: 1px solid #023E5A;
+}
+
+.ul-pagination a {
+  display: block;
+  padding: 8px;
+  line-height: 1;
+  align-self: center;
+}
+
+.pagination__arrow-n {
+  margin-left: 10px;
+}
+
+.pagination__arrow-p {
+  margin-right: 10px;
+}
+
 .body-cooki {
   position: fixed;
   bottom: 10px;
@@ -3411,6 +3455,10 @@ ul.catalog-card__list {
 
   .secondlevwr {
     flex-direction: column;
+  }
+
+  .body-pagination {
+    justify-content: center;
   }
 
   .text-picture__img img {
