@@ -1128,7 +1128,7 @@ body.lock {
 
 .title-page {
   font-size: calc(24px + 12 * ((100vw - 320px) / 1600));
-  line-height: .8;
+  line-height: 1;
 }
 
 .sec-crumbs-page {
