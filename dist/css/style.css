@@ -2374,6 +2374,16 @@ ul.catalog-card__list {
   margin-right: 25px;
 }
 
+.quantity-result {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.quantity-result .result {
+  font-size: 18px;
+}
+
 .sec-tabs {
   padding: 10px 0 90px;
 }

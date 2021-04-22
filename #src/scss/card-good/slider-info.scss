@@ -159,3 +159,11 @@
     }
   }
 }
+.quantity-result{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .result{
+    font-size: 18px;
+  }
+}
