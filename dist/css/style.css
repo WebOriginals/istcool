@@ -1137,6 +1137,7 @@ body.lock {
 
 .body-crumbs ul {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
 }
 
