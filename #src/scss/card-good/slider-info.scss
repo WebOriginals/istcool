@@ -34,7 +34,9 @@
     img {
       max-width: 100%;
       align-self: center;
-
+      @include mq('tablet-wide') {
+        max-width: 90%;
+      }
     }
   }
 
@@ -43,14 +45,19 @@
 .body-slider-little {
   min-width: 0;
 
+
+
   @include mq('tablet-wide') {
     grid-area: -1;
+    .slider-little-container{
+      height: 365px;
+    }
   }
 
   .slider-little-slide {
-    height: 85px;
-    @include mq('tablet-wide') {
-      height: 95px !important;
+
+    @include maq('tablet-wide') {
+      height: 85px;
     }
 
     img {

@@ -177,14 +177,37 @@
   }
 
   &:hover {
+
+
     @include mq('desktop') {
       .wraper-menusecond {
         display: block;
         position: absolute;
         width: 1005px;
-        top: 25px;
+        top: 0px;
+        padding-top: 50px;
         left: 0;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        &:before{
+          content: '';
+          position: absolute;
+          width: 4px;
+          height: 50px;
+          background: $color_4;
+          top: 0;
+          right: -3px;
+          z-index: 100;
+        }
+        &:after{
+          content: '';
+          position: absolute;
+          width: 4px;
+          height: 50px;
+          background: $color_4;
+          top: 0;
+          left: -3px;
+          z-index: 100;
+        }
       }
     }
   }
@@ -193,8 +216,8 @@
     display: none;
     @include mq('desktop') {
       width: 1000px;
-      overflow: hidden;
       transition: 1.5s;
+
     }
 
     li {
@@ -228,7 +251,7 @@
   -moz-transition: all 1s ease-in-out;
   -o-transition: all 1s ease-in-out;
   -webkit-transition: all 1s ease-in-out;
-  z-index: 1000;
+  z-index: 10;
 
 
   @include mq('tablet') {
