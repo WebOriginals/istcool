@@ -6,6 +6,10 @@ if( $( '.slider-little-container' ).length ) {
         slideToClickedSlide:true,
         watchSlidesVisibility: true,
         watchSlidesProgress: true,
+        navigation: {
+            nextEl: '.little-button-next',
+            prevEl: '.little-button-prev',
+        },
         breakpoints: {
             300: {
                 direction: 'horizontal',

@@ -3,7 +3,7 @@
 }
 
 .body-header-top{
-padding: 20px 0;
+padding: 20px 0 0;
 }
 
 .wrapper-header-top{
@@ -13,7 +13,7 @@ padding: 20px 0;
 
 .header-toop__address{
   @include adaptiv-font(12,10);
-  flex: 0 0 200px;
+  flex: 0 0 211px;
 }
 
 .wrapper-menu-header-top{
@@ -30,7 +30,7 @@ padding: 20px 0;
 }
 
 .body-header-middle{
-  padding: 20px 0;
+  padding: 15px 0;
 }
 
 .wrapper-header-middle{
@@ -82,6 +82,31 @@ padding: 20px 0;
   align-self: center;
   grid-template-columns: 1fr 1fr;
   a{
+    &:first-child:hover:after{
+      content: 'Личный кабинет';
+      position: absolute;
+      top: -15px;
+      left: 20px;
+      font-size: 12px;
+      background: $color_1;
+      width: 100px;
+      height: 20px;
+      box-shadow: 0 4px 4px $color_6;
+      z-index: 10;
+
+    }
+    &:last-child:hover:after{
+      content: 'Корзина';
+      position: absolute;
+      top: -15px;
+      left: 20px;
+      font-size: 12px;
+      background: $color_1;
+      width: 60px;
+      height: 20px;
+      box-shadow: 0 4px 4px $color_6;
+      z-index: 10;
+    }
     display: block;
     padding:0 6px;
     position: relative;

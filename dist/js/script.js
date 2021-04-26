@@ -415,6 +415,10 @@ document.addEventListener('keydown', function (e) {
         slideToClickedSlide:true,
         watchSlidesVisibility: true,
         watchSlidesProgress: true,
+        navigation: {
+            nextEl: '.little-button-next',
+            prevEl: '.little-button-prev',
+        },
         breakpoints: {
             300: {
                 direction: 'horizontal',

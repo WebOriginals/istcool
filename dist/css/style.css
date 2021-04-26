@@ -357,11 +357,11 @@ a {
   background-position: right 10px;
   background-repeat: no-repeat;
   width: 100%;
-  background-image: url("/bitrix/templates/labsales//img/ic/saidbar-arrow-d.svg");
+  background-image: url("./../../../img/ic/saidbar-arrow-d.svg");
 }
 
 .dropDownList-title.open {
-  background-image: url("/bitrix/templates/labsales//img/ic/saidbar-arrow-u.svg");
+  background-image: url("./../../../img/ic/saidbar-arrow-u.svg");
 }
 
 .dropDownList-hidden {
@@ -424,7 +424,7 @@ a {
   width: 15px;
   height: 13px;
   margin-top: -3.5px;
-  background-image: url("/bitrix/templates/labsales//img/ic/saidbar-arrow-d.svg");
+  background-image: url("./../../../img/ic/saidbar-arrow-d.svg");
   background-repeat: no-repeat;
   -webkit-background-size: contain;
   -moz-background-size: contain;
@@ -432,7 +432,7 @@ a {
 }
 
 .transfotm .wrapper-input:before {
-  background-image: url("/bitrix/templates/labsales//img/ic/saidbar-arrow-u.svg");
+  background-image: url("./../../../img/ic/saidbar-arrow-u.svg");
 }
 
 .wrapper-list {
@@ -595,7 +595,7 @@ body.lock {
 }
 
 .body-header-top {
-  padding: 20px 0;
+  padding: 20px 0 0;
 }
 
 .wrapper-header-top {
@@ -605,7 +605,7 @@ body.lock {
 
 .header-toop__address {
   font-size: calc(10px + 2 * ((100vw - 320px) / 1600));
-  flex: 0 0 200px;
+  flex: 0 0 211px;
 }
 
 .wrapper-menu-header-top li a {
@@ -618,7 +618,7 @@ body.lock {
 }
 
 .body-header-middle {
-  padding: 20px 0;
+  padding: 15px 0;
 }
 
 .wrapper-header-middle {
@@ -669,6 +669,32 @@ body.lock {
   display: block;
   padding: 0 6px;
   position: relative;
+}
+
+.wrapper-lk-basket a:first-child:hover:after {
+  content: 'Личный кабинет';
+  position: absolute;
+  top: -15px;
+  left: 20px;
+  font-size: 12px;
+  background: #FFFFFF;
+  width: 100px;
+  height: 20px;
+  box-shadow: 0 4px 4px #C4C4C4;
+  z-index: 10;
+}
+
+.wrapper-lk-basket a:last-child:hover:after {
+  content: 'Корзина';
+  position: absolute;
+  top: -15px;
+  left: 20px;
+  font-size: 12px;
+  background: #FFFFFF;
+  width: 60px;
+  height: 20px;
+  box-shadow: 0 4px 4px #C4C4C4;
+  z-index: 10;
 }
 
 .wrapper-lk-basket a:first-child {
@@ -870,7 +896,7 @@ body.lock {
   width: 10px;
   height: 12px;
   align-self: center;
-  background-image: url("/bitrix/templates/labsales//img/ic/mobile-sec.svg");
+  background-image: url("./../../img/ic/mobile-sec.svg");
   background-position: center center;
   background-repeat: no-repeat;
 }
@@ -1051,7 +1077,7 @@ body.lock {
 
 .open-link-second-level {
   background-image: none;
-  background-image: url("/bitrix/templates/labsales//img/ic/arrow-pink.svg") !important;
+  background-image: url("./../img/ic/arrow-pink.svg") !important;
   background-position: right 3px;
   background-repeat: no-repeat;
 }
@@ -1132,7 +1158,7 @@ body.lock {
 }
 
 .sec-crumbs-page {
-  padding: 40px 0 5px;
+  padding: 20px 0 5px;
 }
 
 .body-crumbs ul {
@@ -1314,7 +1340,7 @@ body.lock {
   top: 2px;
   left: 2px;
   margin-top: 11px;
-  background-image: url("/bitrix/templates/labsales//img/ic/chexkbox.svg");
+  background-image: url("./../../img/ic/chexkbox.svg");
   background-repeat: no-repeat;
 }
 
@@ -2273,6 +2299,7 @@ ul.catalog-card__list {
 
 .body-slider-little {
   min-width: 0;
+  position: relative;
 }
 
 .body-slider-little .slider-little-slide img {
@@ -2381,6 +2408,21 @@ ul.catalog-card__list {
   font-size: 18px;
 }
 
+.arrow-little {
+  position: absolute;
+  top: -20px;
+  left: calc(50% - 20px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 115%;
+}
+
+.arrow-little .little-button-next,
+.arrow-little .little-button-prev {
+  cursor: pointer;
+}
+
 .sec-tabs {
   padding: 10px 0 90px;
 }
@@ -2424,11 +2466,11 @@ ul.catalog-card__list {
 }
 
 .additionaloptions .checkbox__label:before {
-  margin: 22px 10px 0 0;
+  margin: 3px 10px 0 0;
 }
 
 .additionaloptions .checkbox__label:after {
-  margin-top: 21px;
+  margin-top: 2px;
 }
 
 .delivery-paymant h2 {
@@ -2820,15 +2862,15 @@ ul.catalog-card__list {
   }
 
   .first-screen {
-    padding: 50px 0 20px;
+    padding: 15px 0 20px;
   }
 
   .sec-catalog {
-    padding: 20px 0 50px;
+    padding: 20px 0 40px;
   }
 
   .sec-advantages {
-    padding: 50px 0 50px;
+    padding: 40px 0 40px;
   }
 
   .body-advantages {
@@ -2837,19 +2879,19 @@ ul.catalog-card__list {
   }
 
   .sec-banner {
-    padding: 50px 0 50px;
+    padding: 40px 0 40px;
   }
 
   .sec-news {
-    padding: 50px 0 50px;
+    padding: 40px 0 40px;
   }
 
   .sec-text-picture {
-    padding: 50px 0 50px;
+    padding: 40px 0 40px;
   }
 
   .sec-articles {
-    padding: 50px 0 100px;
+    padding: 40px 0 80px;
   }
 
   .articles-container {
@@ -2861,7 +2903,7 @@ ul.catalog-card__list {
   }
 
   .sec-hit {
-    padding: 50px 0 50px;
+    padding: 40px 0 10px;
   }
 
   .contact-information .block-payment {
@@ -2927,11 +2969,11 @@ ul.catalog-card__list {
 
   .wrapper-dropDownList .dropDownList__title {
     width: 100%;
-    background-image: url("/bitrix/templates/labsales//img/ic/saidbar-arrow-d.svg");
+    background-image: url("./../../img/ic/saidbar-arrow-d.svg");
   }
 
   .wrapper-dropDownList .dropDownList__title.open {
-    background-image: url("/bitrix/templates/labsales//img/ic/saidbar-arrow-u.svg");
+    background-image: url("./../../img/ic/saidbar-arrow-u.svg");
   }
 
   .close-btn-saitbar {
@@ -2963,6 +3005,7 @@ ul.catalog-card__list {
 
   .wrapper-slider-card {
     grid-template-columns: 95px 1fr;
+    padding-top: 24px;
   }
 
   .body-slider-large .slider-large-slide {
@@ -2975,6 +3018,7 @@ ul.catalog-card__list {
 
   .body-slider-little {
     grid-area: -1;
+    height: 365px;
   }
 
   .body-slider-little .slider-little-container {
@@ -3009,6 +3053,11 @@ ul.catalog-card__list {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   }
 
+  .sec-tabs .tabs__content .wrapper-price {
+    height: auto;
+    margin-bottom: 0;
+  }
+
   .sec-tabs .tabs__content {
     margin-top: 5px;
   }
@@ -3026,7 +3075,7 @@ ul.catalog-card__list {
   }
 
   .body-contacts {
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 35% 1fr;
     grid-gap: 50px;
   }
 
@@ -3130,7 +3179,7 @@ ul.catalog-card__list {
   }
 
   .sec-crumbs-page {
-    padding: 70px 0 10px;
+    padding: 40px 0 10px;
   }
 
   .popular-wrapper {

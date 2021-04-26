@@ -9,7 +9,7 @@
   display: grid;
   grid-gap: 30px;
   @include mq('tablet-wide') {
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 35% 1fr;
     grid-gap: 50px;
   }
 }
