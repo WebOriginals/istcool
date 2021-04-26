@@ -253,6 +253,7 @@ document.addEventListener('keydown', function (e) {
     if ($('.firstScreen-container').length) {
     var swiper = new Swiper('.firstScreen-container', {
         lazy: true,
+        autoHeight: true,
         spaceBetween:15,
         pagination: {
             el: '.firstScreen-pagination',
