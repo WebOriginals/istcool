@@ -357,11 +357,11 @@ a {
   background-position: right 10px;
   background-repeat: no-repeat;
   width: 100%;
-  background-image: url("./../../../img/ic/saidbar-arrow-d.svg");
+  background-image: url("/bitrix/templates/labsales//img/ic/saidbar-arrow-d.svg");
 }
 
 .dropDownList-title.open {
-  background-image: url("./../../../img/ic/saidbar-arrow-u.svg");
+  background-image: url("/bitrix/templates/labsales//img/ic/saidbar-arrow-u.svg");
 }
 
 .dropDownList-hidden {
@@ -424,7 +424,7 @@ a {
   width: 15px;
   height: 13px;
   margin-top: -3.5px;
-  background-image: url("./../../../img/ic/saidbar-arrow-d.svg");
+  background-image: url("/bitrix/templates/labsales//img/ic/saidbar-arrow-d.svg");
   background-repeat: no-repeat;
   -webkit-background-size: contain;
   -moz-background-size: contain;
@@ -432,7 +432,7 @@ a {
 }
 
 .transfotm .wrapper-input:before {
-  background-image: url("./../../../img/ic/saidbar-arrow-u.svg");
+  background-image: url("/bitrix/templates/labsales//img/ic/saidbar-arrow-u.svg");
 }
 
 .wrapper-list {
@@ -605,7 +605,7 @@ body.lock {
 
 .header-toop__address {
   font-size: calc(10px + 2 * ((100vw - 320px) / 1600));
-  flex: 0 0 211px;
+  flex: 0 0 221px;
 }
 
 .wrapper-menu-header-top li a {
@@ -624,7 +624,7 @@ body.lock {
 .wrapper-header-middle {
   display: grid;
   align-items: center;
-  grid-template-columns: 1fr 1fr 1fr 99px;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 25px;
 }
 
@@ -898,7 +898,7 @@ body.lock {
   width: 10px;
   height: 12px;
   align-self: center;
-  background-image: url("./../../img/ic/mobile-sec.svg");
+  background-image: url("/bitrix/templates/labsales//img/ic/mobile-sec.svg");
   background-position: center center;
   background-repeat: no-repeat;
 }
@@ -1079,7 +1079,7 @@ body.lock {
 
 .open-link-second-level {
   background-image: none;
-  background-image: url("./../img/ic/arrow-pink.svg") !important;
+  background-image: url("/bitrix/templates/labsales//img/ic/arrow-pink.svg") !important;
   background-position: right 3px;
   background-repeat: no-repeat;
 }
@@ -1342,7 +1342,7 @@ body.lock {
   top: 2px;
   left: 2px;
   margin-top: 11px;
-  background-image: url("./../../img/ic/chexkbox.svg");
+  background-image: url("/bitrix/templates/labsales//img/ic/chexkbox.svg");
   background-repeat: no-repeat;
 }
 
@@ -2869,6 +2869,12 @@ ul.catalog-card__list {
     display: none;
   }
 
+  .wrapper-header-bottom {
+    display: grid;
+    grid-template-columns: 1fr 99px;
+    align-items: center;
+  }
+
   .wrapper-menu {
     top: 95px;
   }
@@ -3007,11 +3013,11 @@ ul.catalog-card__list {
 
   .wrapper-dropDownList .dropDownList__title {
     width: 100%;
-    background-image: url("./../../img/ic/saidbar-arrow-d.svg");
+    background-image: url("/bitrix/templates/labsales//img/ic/saidbar-arrow-d.svg");
   }
 
   .wrapper-dropDownList .dropDownList__title.open {
-    background-image: url("./../../img/ic/saidbar-arrow-u.svg");
+    background-image: url("/bitrix/templates/labsales//img/ic/saidbar-arrow-u.svg");
   }
 
   .close-btn-saitbar {

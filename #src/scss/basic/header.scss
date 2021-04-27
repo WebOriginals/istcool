@@ -13,7 +13,7 @@ padding: 20px 0 0;
 
 .header-toop__address{
   @include adaptiv-font(12,10);
-  flex: 0 0 211px;
+  flex: 0 0 221px;
 }
 
 .wrapper-menu-header-top{
@@ -36,7 +36,7 @@ padding: 20px 0 0;
 .wrapper-header-middle{
   display: grid;
   align-items: center;
-  grid-template-columns: 1fr 1fr 1fr 99px;
+  grid-template-columns: 1fr 1fr 1fr ;
   grid-gap: 25px;
   @include mq('desktop-wide') {
     grid-gap: 56px;
@@ -225,5 +225,13 @@ padding: 20px 0 0;
     right: 5px;
     position: absolute;
     cursor: pointer;
+  }
+}
+
+.wrapper-header-bottom{
+  @include mq('tablet-wide') {
+    display: grid;
+    grid-template-columns: 1fr 99px;
+    align-items: center;
   }
 }
