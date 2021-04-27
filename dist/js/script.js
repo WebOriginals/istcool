@@ -258,6 +258,7 @@ document.addEventListener('keydown', function (e) {
         },
         autoHeight: true,
         spaceBetween:15,
+        loop:true,
         pagination: {
             el: '.firstScreen-pagination',
             clickable: true,
@@ -543,5 +544,12 @@ if( $( '.body-header-mobile' ).length ) {
 }
 
 
+    $().fancybox({
+    selector : '.fancybox-img:visible',
+    loop : true,
+    thumbs   : {
+        autoStart : true
+    }
+});
 
 })

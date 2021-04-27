@@ -28,5 +28,6 @@ $( document ).ready(function() {
 
     //меню
     @@include('menu.js')
+    @@include('fancybox.js')
 
 })

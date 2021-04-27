@@ -6,6 +6,7 @@
     <title>istcool</title>
     <!--link(rel="preload" as="style" onload="this.rel='stylesheet'" href="https://unpkg.com/swiper/swiper-bundle.min.css")-->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
@@ -104,7 +105,7 @@
         <div class="container">
           <div class="wrapper-header-mobile">
             <div class="wrapper-logo"><a class="logo logo-ic" href="/"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/ic/Logo.png" data-src-small="img/ic/Logo.png" alt=""></a><img class="b-lazy link-back" src="img/ic/back.svg" alt=""></div>
-            <div class="wrapper-lk-basket"><a href="#"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/ic/search2.svg" data-src-small="img/ic/search2.svg" alt=""></a><a href="#"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/ic/basket.svg" data-src-small="img/ic/basket.svg" alt="">
+            <div class="wrapper-lk-basket"><a href="#"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/ic/search2.svg" data-src-small="img/ic/search2.svg" alt=""></a><a href="#"><img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/ic/basket-b.svg" data-src-small="img/ic/basket-b.svg" alt="">
                 <div class="col-vo-goods"><span>55</span></div></a></div>
             <div class="wrapper-gamburger">
               <button class="cmn-toggle-switch cmn-toggle-switch__htx"><span>toggle menu</span></button>
@@ -195,24 +196,18 @@
             <div class="body-slider-large">
               <div class="swiper-container slider-large-container">
                 <div class="swiper-wrapper slider-large-wrapper">
-                  <div class="swiper-slide slider-large-slide"><img class="swiper-lazy" data-src="img/main/2_1.png">
-                    <div class="swiper-lazy-preloader"></div>
-                  </div>
-                  <div class="swiper-slide slider-large-slide"><img class="swiper-lazy" data-src="img/main/2_2.png">
-                    <div class="swiper-lazy-preloader"></div>
-                  </div>
-                  <div class="swiper-slide slider-large-slide"><img class="swiper-lazy" data-src="img/main/2_3.png">
-                    <div class="swiper-lazy-preloader"></div>
-                  </div>
-                  <div class="swiper-slide slider-large-slide"><img class="swiper-lazy" data-src="img/main/2_1.png">
-                    <div class="swiper-lazy-preloader"></div>
-                  </div>
-                  <div class="swiper-slide slider-large-slide"><img class="swiper-lazy" data-src="img/main/2_2.png">
-                    <div class="swiper-lazy-preloader"></div>
-                  </div>
-                  <div class="swiper-slide slider-large-slide"><img class="swiper-lazy" data-src="img/main/2_3.png">
-                    <div class="swiper-lazy-preloader"></div>
-                  </div>
+                  <div class="swiper-slide slider-large-slide"><a class="fancybox-img" href="img/main/2_1.png" data-fancybox="gallery"><img class="swiper-lazy" data-src="img/main/2_1.png">
+                      <div class="swiper-lazy-preloader"></div></a></div>
+                  <div class="swiper-slide slider-large-slide"><a class="fancybox-img" href="img/main/2_2.png" data-fancybox="gallery"><img class="swiper-lazy" data-src="img/main/2_2.png">
+                      <div class="swiper-lazy-preloader"></div></a></div>
+                  <div class="swiper-slide slider-large-slide"><a class="fancybox-img" href="img/main/2_1.png" data-fancybox="gallery"><img class="swiper-lazy" data-src="img/main/2_3.png">
+                      <div class="swiper-lazy-preloader"></div></a></div>
+                  <div class="swiper-slide slider-large-slide"><a class="fancybox-img" href="img/main/2_1.png" data-fancybox="gallery"><img class="swiper-lazy" data-src="img/main/2_1.png">
+                      <div class="swiper-lazy-preloader"></div></a></div>
+                  <div class="swiper-slide slider-large-slide"><a class="fancybox-img" href="img/main/2_1.png" data-fancybox="gallery"><img class="swiper-lazy" data-src="img/main/2_2.png">
+                      <div class="swiper-lazy-preloader"></div></a></div>
+                  <div class="swiper-slide slider-large-slide"><a class="fancybox-img" href="img/main/2_1.png" data-fancybox="gallery"><img class="swiper-lazy" data-src="img/main/2_3.png">
+                      <div class="swiper-lazy-preloader"></div></a></div>
                 </div>
               </div>
             </div>
@@ -574,6 +569,7 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script src="js/script.min.js"></script>
   </body>
 </html>

@@ -6,6 +6,7 @@ if ($('.firstScreen-container').length) {
         },
         autoHeight: true,
         spaceBetween:15,
+        loop:true,
         pagination: {
             el: '.firstScreen-pagination',
             clickable: true,
