@@ -185,6 +185,9 @@
   flex-direction: column;
   justify-content: space-between;
   height: 115%;
+  @include maq('tablet-wide') {
+    display: none;
+  }
 
 
   .little-button-next,

@@ -48,6 +48,17 @@
     }
   }
 }
+
+.tabs__content,.checkbox {
+
+
+  .wrapper-price{
+    height: auto;
+    margin-bottom: 0;
+  }
+
+}
+
 .specifications{
   p{
     @include adaptiv-font(16,14);
@@ -61,7 +72,11 @@
     @include adaptiv-font(18,18);
     margin-bottom: 20px;
   }
-
+  a{
+    color: $color_4;
+    text-decoration: underline;
+    font-weight: 500;
+  }
 }
 
 .additionaloptions{
