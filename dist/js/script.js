@@ -544,12 +544,4 @@ if( $( '.body-header-mobile' ).length ) {
 }
 
 
-    $().fancybox({
-    selector : '.fancybox-img:visible',
-    loop : true,
-    thumbs   : {
-        autoStart : true
-    }
-});
-
 })
