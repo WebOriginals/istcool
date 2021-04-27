@@ -20,3 +20,31 @@
 .firstScreen-pagination{
   margin-top: 20px;
 }
+
+.body-first-screen{
+  position: relative;
+}
+
+.arrow-first-screen{
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  top: 50%;
+
+  .first-screen-button-next{
+    transform: translateX(40px);
+  }
+  .first-screen-button-prev{
+    transform: translateX(-40px);
+  }
+  @include maq('tablet-wide') {
+    display: none;
+  }
+}
+
+.firstScreen-pagination{
+  @include mq('tablet-wide') {
+    display: none;
+  }
+}
