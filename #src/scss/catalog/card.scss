@@ -45,7 +45,8 @@
   grid-gap: 15px;
   align-items: center;
   @include mq('tablet-wide') {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 230px 1fr;
+    //grid-template-columns: 1fr 1fr;
     grid-gap: 15px;
   }
 }
