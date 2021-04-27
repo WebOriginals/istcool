@@ -30,7 +30,7 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  top: 50%;
+  top: calc(50% - 20px);
 
   .first-screen-button-next{
     transform: translateX(40px);

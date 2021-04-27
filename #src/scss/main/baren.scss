@@ -17,4 +17,12 @@
 
 .banner-pagination{
   margin-top: 20px;
+  @include mq('tablet-wide') {
+    display: none;
+  }
+}
+
+.arrow-banner{
+  left: -30px;
+  width: 106%;
 }

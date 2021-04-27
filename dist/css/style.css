@@ -1376,7 +1376,7 @@ body.lock {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  top: 50%;
+  top: calc(50% - 20px);
 }
 
 .arrow-first-screen .first-screen-button-next {
@@ -1459,6 +1459,11 @@ body.lock {
 
 .banner-pagination {
   margin-top: 20px;
+}
+
+.arrow-banner {
+  left: -30px;
+  width: 106%;
 }
 
 .sec-news {
@@ -2924,6 +2929,10 @@ ul.catalog-card__list {
 
   .sec-banner {
     padding: 40px 0 40px;
+  }
+
+  .banner-pagination {
+    display: none;
   }
 
   .sec-news {

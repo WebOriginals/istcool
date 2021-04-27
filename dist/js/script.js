@@ -306,8 +306,15 @@ document.addEventListener('keydown', function (e) {
         loop: true,
         lazy: true,
         slideToClickedSlide: true,
+        autoplay: {
+            delay: 5000,
+        },
         pagination: {
             el: '.banner-pagination',
+        },
+        navigation: {
+            nextEl: '.arrow-banner-button-next',
+            prevEl: '.arrow-banner-button-prev',
         },
     });
 
