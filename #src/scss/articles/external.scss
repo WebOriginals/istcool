@@ -1,0 +1,37 @@
+.body-articles{
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: 1fr;
+  @include mq('tablet') {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.internal-article__description{
+  margin-top: 40px;
+  h2{
+    margin-bottom: 20px;
+    font-weight: bold;
+    @include adaptiv-font(18,16);
+  }
+  h3{
+    @include adaptiv-font(16,14);
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  p{
+    margin-bottom: 15px;
+  }
+  ol,ul{
+    margin-bottom: 20px;
+    padding-left: 20px;
+    li{
+      margin-bottom: 10px;
+    }
+  }
+  ul{
+    li{
+      list-style: disc;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+include pug/mixins
+doctype html
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0")
+        title istcool
+        link(rel="stylesheet" href="css/style.min.css")
+
+    body
+        include pug/basic/header
+        include pug/basic/crumbs
+        +title('Сатьи внутренняя')
+        include pug/articles/internal
+
+
+        include pug/basic/footer
+        //include pug/basic/cooki
+        include pug/basic/modals
+
+
+
+
+        script(src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js")
+        script(src="js/script.min.js")
+
