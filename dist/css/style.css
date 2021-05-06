@@ -1319,6 +1319,7 @@ body.lock {
   align-items: center;
   position: relative;
   cursor: pointer;
+  padding-left: 0 !important;
 }
 
 .checkbox__label::before {
