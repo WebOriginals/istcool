@@ -26,32 +26,19 @@
 }
 
 .wrapper-dropDownList {
+  position: relative;
   margin: 10px 0 10px;
   @include mq('tablet-wide') {
     .dropDownList__title {
       width: 100%;
-
-      @if ($link-img == '') {
-        background-image: url("./../../img/ic/saidbar-arrow-d.svg");
-      } @else {
-        background-image: url($link-img + "/img/ic/saidbar-arrow-d.svg");
-      }
-
-      &.open {
-        @if ($link-img == '') {
-          background-image: url("./../../img/ic/saidbar-arrow-u.svg");
-        } @else {
-          background-image: url($link-img + "/img/ic/saidbar-arrow-u.svg");
-        }
-      }
     }
-
   }
 }
 
 .dropDownList__title {
   font-weight: bold;
   @include adaptiv-font(16, 14);
+  padding-right: 20px;
 }
 
 .dropDownList__link-saitbar {
@@ -206,5 +193,30 @@
   top: 15px;
   right: 15px;
 }
+.ic-title{
 
+  background-position: center right;
+  background-repeat: no-repeat;
+  @if ($link-img == '') {
+    background-image: url("./../../img/ic/saidbar-arrow-d.svg");
+  } @else {
+    background-image: url($link-img + "/img/ic/saidbar-arrow-d.svg");
+  }
+
+  &.open {
+    @if ($link-img == '') {
+      background-image: url("./../../img/ic/saidbar-arrow-u.svg");
+    } @else {
+      background-image: url($link-img + "/img/ic/saidbar-arrow-u.svg");
+    }
+  }
+}
+.wrapper-title-drop-list{
+  display: flex;
+  align-items: center;
+
+}
+.dropDownList-hidden{
+  padding-top: 15px;
+}
 
