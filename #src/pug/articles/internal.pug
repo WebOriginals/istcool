@@ -1,10 +1,12 @@
 section.sec-internal
     .container
-        .body-internal
-            .internal-img
+        .body-internal( itemscope itemtype="http://schema.org/Article")
+            .internal-img( itemscope itemprop="image" itemtype="http://schema.org/ImageObject")
                 img.b-lazy(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/article.png" data-src-small="img/article.png" alt="")
             .internal-article
-                .internal-article__description
+                .internal-article__title(style="display: none;" itemprop="headline") Заголовок статьи это для микроразметки
+                .internal-article__description( itemprop="description" )
+
                     h2 Умное охлаждение.
                     p А умное охлаждение не значит дорого и сложно, но оптимально и разумно! ISTCOOL – «Золотая середина» не из-за высокой стоимости  золота, но желанная середина – грамотно рассчитанное и выверенное практикой инженерное
                     h3 Инженерное
@@ -20,6 +22,7 @@ section.sec-internal
                         li это умное охлаждение. А умное охлаждение не значит дорого и сложно, но оптимально и разумно! ISTCOOL – «Золотая середина» не из-за высокой стоимости золота
                         li это умное охлаждение. А умное охлаждение не значит дорого и сложно, но оптимально и разумно! ISTCOOL – «Золотая середина» не из-за высокой стоимости золота
                         li это умное охлаждение. А умное охлаждение не значит дорого и сложно, но оптимально и разумно! ISTCOOL – «Золотая середина» не из-за высокой стоимости золот
+
         .wr-sh
             .body-sher
                 .sher-ic
