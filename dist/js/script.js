@@ -424,12 +424,17 @@ document.addEventListener('keydown', function (e) {
 
     if( $( '.slider-little-container' ).length ) {
     var sliderLlittle = new Swiper('.slider-little-container', {
-        slidesPerView: 1,
+        slidesPerView: 3,
         spaceBetween: 15,
         lazy: true,
+
+        loop: true,
+
+
         slideToClickedSlide:true,
         watchSlidesVisibility: true,
         watchSlidesProgress: true,
+        watchOverflow:true,
         navigation: {
             nextEl: '.little-button-next',
             prevEl: '.little-button-prev',
@@ -447,6 +452,8 @@ document.addEventListener('keydown', function (e) {
             },
         }
     });
+
+
 
 
     var sliderLarge = new Swiper('.slider-large-container', {
@@ -542,6 +549,29 @@ if( $( '.body-header-mobile' ).length ) {
         });
     }
 }
+
+
+    
+$(".body-sher").click(function () {
+    var elem = this;
+    var block = $(elem).closest('.wr-sh');
+    var text = $(block).find('.sher-text');
+    var hover = $(block).find('.sher-hover');
+
+    $(hover).addClass("active");
+    $(text).addClass("active");
+});
+
+$(".sher-close").click(function () {
+    var elem = this;
+    var block = $(elem).closest('.wr-sh');
+    var text = $(block).find('.sher-text');
+    var hover = $(block).find('.sher-hover');
+
+    $(hover).removeClass("active");
+    $(text).removeClass("active");
+});
+
 
 
 })

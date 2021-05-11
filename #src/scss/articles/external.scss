@@ -35,3 +35,25 @@
     }
   }
 }
+.internal-img{
+  img{
+    max-width: 100%;
+  }
+}
+
+.body-read{
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: 1fr;
+  @include mq('tablet') {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.read-title{
+  @include adaptiv-margin-bottom(40,20);
+}
+
+.sec-internal{
+  padding: 40px 0 70px;
+}

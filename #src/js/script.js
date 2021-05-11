@@ -28,4 +28,5 @@ $( document ).ready(function() {
 
     //меню
     @@include('menu.js')
+    @@include('sher.js')
 })

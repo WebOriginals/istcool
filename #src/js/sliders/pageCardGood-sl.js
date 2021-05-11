@@ -1,11 +1,16 @@
 if( $( '.slider-little-container' ).length ) {
     var sliderLlittle = new Swiper('.slider-little-container', {
-        slidesPerView: 1,
+        slidesPerView: 3,
         spaceBetween: 15,
         lazy: true,
+
+        loop: true,
+
+
         slideToClickedSlide:true,
         watchSlidesVisibility: true,
         watchSlidesProgress: true,
+        watchOverflow:true,
         navigation: {
             nextEl: '.little-button-next',
             prevEl: '.little-button-prev',
@@ -23,6 +28,8 @@ if( $( '.slider-little-container' ).length ) {
             },
         }
     });
+
+
 
 
     var sliderLarge = new Swiper('.slider-large-container', {

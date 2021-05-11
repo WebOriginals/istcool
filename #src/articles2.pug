@@ -12,6 +12,7 @@ html(lang="ru")
         include pug/basic/crumbs
         +title('Сатьи внутренняя')
         include pug/articles/internal
+        include pug/articles/read
 
 
         include pug/basic/footer
@@ -22,5 +23,9 @@ html(lang="ru")
 
 
         script(src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js")
+        script(src="https://yastatic.net/share2/share.js" async)
         script(src="js/script.min.js")
+        // это поделиться
+        script var myShare = document.getElementById('my-share');Ya.share2('my-share', {content: {url: 'http://localhost:3000/articles2.html',title: 'Умное охлаждение.125',description: 'А умное охлаждение не значит дорого и сложно, но оптимально и разумно!',image: 'http://localhost:3000/img/ic/logo.png'}})
+
 

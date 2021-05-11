@@ -1,0 +1,51 @@
+.sher-ic{
+  width: 50px;
+  height: 50px;
+  background: $color_4;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wr-sh{
+  position: relative;
+}
+.body-sher{
+  display: flex;
+  align-items: center;
+  transition: .5s;
+}
+
+
+.sher-text{
+  @include adaptiv-font(18,16);
+  margin-left: 10px;
+  &.active{
+    display: none;
+  }
+}
+
+.sher-hover{
+  display: none;
+  height: 50px;
+  position: absolute;
+  background: $color_1;
+  //min-width: 200px;
+  border-radius: 15px;
+  border: 1px solid $color_3;
+  align-items: center;
+  padding: 0 15px;
+  z-index: 12;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  &.active{
+    display: flex;
+  }
+}
+
+.sher-close{
+  margin-left: 25px;
+  cursor: pointer;
+
+}
