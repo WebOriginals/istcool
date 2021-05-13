@@ -427,9 +427,7 @@ document.addEventListener('keydown', function (e) {
         slidesPerView: 3,
         spaceBetween: 15,
         lazy: true,
-
-        loop: true,
-
+        //loop:true,
 
         slideToClickedSlide:true,
         watchSlidesVisibility: true,
@@ -454,8 +452,6 @@ document.addEventListener('keydown', function (e) {
     });
 
 
-
-
     var sliderLarge = new Swiper('.slider-large-container', {
         lazy: true,
         spaceBetween: 15,
@@ -463,6 +459,7 @@ document.addEventListener('keydown', function (e) {
             swiper: sliderLlittle
         }
     });
+
 
 };
 

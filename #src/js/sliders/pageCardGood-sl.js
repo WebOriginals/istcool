@@ -3,9 +3,7 @@ if( $( '.slider-little-container' ).length ) {
         slidesPerView: 3,
         spaceBetween: 15,
         lazy: true,
-
-        loop: true,
-
+        //loop:true,
 
         slideToClickedSlide:true,
         watchSlidesVisibility: true,
@@ -30,8 +28,6 @@ if( $( '.slider-little-container' ).length ) {
     });
 
 
-
-
     var sliderLarge = new Swiper('.slider-large-container', {
         lazy: true,
         spaceBetween: 15,
@@ -39,6 +35,7 @@ if( $( '.slider-little-container' ).length ) {
             swiper: sliderLlittle
         }
     });
+
 
 };
 
