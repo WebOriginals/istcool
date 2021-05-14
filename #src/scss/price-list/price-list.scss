@@ -1,0 +1,38 @@
+.body-price-list{
+  display: grid;
+  grid-gap: 30px;
+}
+.price-list__el{
+
+  .price-list__title{
+    @include adaptiv-font(20,18);
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  .price-list__link{
+    padding-left: 40px;
+    background-repeat: no-repeat;
+    background-position: center left;
+  }
+  .price-list--pdf{
+    @if ($link-img == '') {
+      background-image: url("./../img/ic/pdf.svg");
+    } @else {
+      background-image: url($link-img + "/img/ic/pdf.svg");
+    }
+  }
+  .price-list--word{
+    @if ($link-img == '') {
+      background-image: url("./../img/ic/word.svg");
+    } @else {
+      background-image: url($link-img + "/img/ic/word.svg");
+    }
+  }
+  .price-list--excel{
+    @if ($link-img == '') {
+      background-image: url("./../img/ic/excel.svg");
+    } @else {
+      background-image: url($link-img + "/img/ic/excel.svg");
+    }
+  }
+}

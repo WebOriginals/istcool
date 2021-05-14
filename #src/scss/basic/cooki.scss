@@ -4,8 +4,9 @@
   right: 10px;
   background: $color_1;
   z-index: 12;
-  padding: 40px 50px;
+  padding: 30px 50px;
   max-width: 950px;
+  border: 1px solid $color_3;
 }
 
 .cooki-btn-close{
@@ -16,7 +17,7 @@
 
 .wrapper-contant-cooki{
   display: grid;
-  grid-template-columns: 1fr 5fr;
+  grid-template-columns: 1fr 5fr 1fr;
   grid-gap: 35px;
   align-items: center;
 }
