@@ -2832,6 +2832,36 @@ ul.catalog-card__list {
   font-size: calc(13.5px + 0.5 * ((100vw - 320px) / 1600));
 }
 
+.body-montage p {
+  margin-bottom: 20px;
+}
+
+.body-montage ol,
+.body-montage ul {
+  padding-left: 20px;
+}
+
+.body-montage ol li,
+.body-montage ul li {
+  margin-bottom: 15px;
+}
+
+.body-montage ul li {
+  list-style: disc;
+}
+
+.body-montage h2 {
+  font-size: calc(24px + 6 * ((100vw - 320px) / 1600));
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.body-montage h3 {
+  font-size: calc(22px + 4 * ((100vw - 320px) / 1600));
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
 @media only screen and (min-width: 320px) {
   .wrapper-ic-header a:not(:last-child) {
     margin-right: 20px;

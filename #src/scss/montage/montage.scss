@@ -1,0 +1,31 @@
+.sec-montage{
+
+}
+
+.body-montage{
+  p{
+    margin-bottom: 20px;
+
+  }
+  ol,ul{
+    padding-left: 20px;
+    li{
+      margin-bottom: 15px;
+    }
+  }
+  ul{
+    li{
+      list-style: disc;
+    }
+  }
+  h2{
+    @include adaptiv-font(30,24);
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  h3{
+    @include adaptiv-font(26,22);
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+}
