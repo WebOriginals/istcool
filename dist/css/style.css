@@ -2569,15 +2569,11 @@ ul.catalog-card__list {
 }
 
 .additionaloptions .checkbox__label {
-  width: 100%;
+  width: 80%;
 }
 
 .additionaloptions .checkbox__label .namedop {
-  margin-right: 55px;
-}
-
-.additionaloptions .checkbox__label .price-newse {
-  margin-right: 10px;
+  margin-right: 25px;
 }
 
 .additionaloptions .checkbox__label:before {
@@ -2586,6 +2582,11 @@ ul.catalog-card__list {
 
 .additionaloptions .checkbox__label:after {
   margin-top: 2px;
+}
+
+.additionaloptions .price-newse {
+  margin-right: 10px;
+  margin-left: 60px;
 }
 
 .delivery-paymant h2 {
@@ -2632,6 +2633,45 @@ ul.catalog-card__list {
 .body-description-mobile .dropDownList-title.open {
   text-decoration: underline;
   color: #023E5A;
+}
+
+.helper {
+  position: relative;
+  z-index: 15;
+}
+
+.helper .helper-ic {
+  width: 15px;
+}
+
+.helper .helper-ic img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+.helper .helper-body {
+  display: none;
+  position: absolute;
+  bottom: 76px;
+  left: -111px;
+  width: 280px;
+}
+
+.helper .helper-body.active {
+  display: block;
+}
+
+.helper .helper-wrapper {
+  position: relative;
+  padding: 25px;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.helper .helper-wrapper .helper-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
 }
 
 .sec-contacts {
@@ -3316,10 +3356,15 @@ ul.catalog-card__list {
   .sec-tabs .tabs__content .wrapper-price {
     height: auto;
     margin-bottom: 0;
+    margin-left: 60px;
   }
 
   .sec-tabs .tabs__content {
     margin-top: 5px;
+  }
+
+  .additionaloptions .checkbox__label {
+    width: 50%;
   }
 
   .body-description {
@@ -3328,6 +3373,36 @@ ul.catalog-card__list {
 
   .body-description-mobile {
     display: none;
+  }
+
+  .helper .helper-body {
+    width: 400px;
+    bottom: 40px;
+    left: -30px;
+  }
+
+  .helper .helper-wrapper:before {
+    content: '';
+    position: absolute;
+    bottom: -29px;
+    left: 23px;
+    border: 14px solid transparent;
+    border-top: 14px solid rgba(0, 0, 0, 0.09);
+    display: block;
+    width: 0;
+    height: 0;
+  }
+
+  .helper .helper-wrapper:after {
+    content: '';
+    position: absolute;
+    bottom: -24px;
+    left: 25px;
+    border: 12px solid transparent;
+    border-top: 12px solid #fff;
+    display: block;
+    width: 0;
+    height: 0;
   }
 
   .sec-contacts {
@@ -3792,6 +3867,10 @@ ul.catalog-card__list {
   .arrow-little {
     display: none;
   }
+
+  .additionaloptions .wrapper-price {
+    justify-content: flex-end;
+  }
 }
 
 @media only screen and (max-width: 990px) {
@@ -3875,5 +3954,11 @@ ul.catalog-card__list {
 @media only screen and (max-width: 1199px) and (min-width: 768px) {
   .cmn-toggle-switch {
     transform: scale(1.5);
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1023px) {
+  .sec-tabs .tabs__content .wrapper-price {
+    justify-content: flex-end;
   }
 }
