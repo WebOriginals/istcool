@@ -1,0 +1,11 @@
+.table-21{
+  border-spacing: 0px;
+  tr:nth-child(odd){
+    background: #f9f9f9;
+  }
+
+  td{
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+}

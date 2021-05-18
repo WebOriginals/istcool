@@ -350,6 +350,19 @@ a {
   padding: 23px 30px 23px !important;
 }
 
+.table-21 {
+  border-spacing: 0px;
+}
+
+.table-21 tr:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+.table-21 td {
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
 .dropDownList-title {
   padding-bottom: 10px;
   cursor: pointer;
@@ -2545,6 +2558,11 @@ ul.catalog-card__list {
 .checkbox .wrapper-price {
   height: auto;
   margin-bottom: 0;
+}
+
+.basket-card .wrapper-price {
+  align-self: flex-end;
+  flex-direction: column-reverse;
 }
 
 .specifications p {

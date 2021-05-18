@@ -69,6 +69,13 @@
 
 }
 
+.basket-card{
+
+  .wrapper-price{
+    align-self: flex-end;
+    flex-direction: column-reverse;
+  }
+}
 .specifications{
   p{
     @include adaptiv-font(16,14);
@@ -230,3 +237,4 @@
     }
   }
 }
+
