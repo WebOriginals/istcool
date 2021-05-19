@@ -2687,9 +2687,18 @@ ul.catalog-card__list {
 }
 
 .helper .helper-wrapper .helper-close {
+  cursor: pointer;
   position: absolute;
   top: 15px;
   right: 15px;
+}
+
+.sec-also-buy {
+  padding: 30px 0 30px;
+}
+
+.also-buy__title {
+  margin-bottom: calc(20px + 20 * ((100vw - 320px) / 1600));
 }
 
 .sec-contacts {
@@ -3421,6 +3430,19 @@ ul.catalog-card__list {
     display: block;
     width: 0;
     height: 0;
+  }
+
+  .sec-also-buy {
+    padding: 40px 0 40px;
+  }
+
+  .body-also-buy {
+    margin-right: -30px;
+    margin-left: -30px;
+  }
+
+  .also-buy-container {
+    padding: 30px;
   }
 
   .sec-contacts {

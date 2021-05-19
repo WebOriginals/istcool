@@ -1,0 +1,23 @@
+.sec-also-buy{
+  padding: 30px 0 30px;
+  @include mq('tablet-wide') {
+    padding: 40px 0 40px;
+  }
+}
+
+.also-buy__title{
+  @include adaptiv-margin-bottom(40,20);
+}
+
+.body-also-buy{
+  @include mq('tablet-wide') {
+    margin-right: -30px;
+    margin-left: -30px;
+  }
+}
+
+.also-buy-container{
+  @include mq('tablet-wide') {
+    padding: 30px;
+  }
+}

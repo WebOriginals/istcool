@@ -21,6 +21,7 @@ $( document ).ready(function() {
     @@include('sliders/pageMain-articles-sl.js')
     @@include('sliders/pageMain-hit-sl.js')
     @@include('sliders/pageCardGood-sl.js')
+    @@include('sliders/pageCardGood-also-buy.js')
     // end sliders
 
 
