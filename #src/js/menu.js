@@ -64,3 +64,7 @@ if( $( '.body-header-mobile' ).length ) {
     }
 }
 
+
+
+Host github.com
+IdentityFile ~/.ssh/WebOriginals
