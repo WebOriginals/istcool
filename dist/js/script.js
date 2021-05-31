@@ -578,7 +578,6 @@ if( $( '.body-header-mobile' ).length ) {
     }
 }
 
-
     
 $(".body-sher").click(function () {
     var elem = this;
