@@ -1,5 +1,5 @@
 .sec-tabs{
-  padding: 10px 0 90px;
+  padding: 10px 0 30px;
   .tabs-nav__item {
     @include adaptiv-font(20, 18);
     font-weight: bold;
@@ -69,13 +69,7 @@
 
 }
 
-.basket-card{
 
-  .wrapper-price{
-    align-self: flex-end;
-    flex-direction: column-reverse;
-  }
-}
 .specifications{
   p{
     @include adaptiv-font(16,14);
@@ -117,8 +111,9 @@
   .price-newse{
     margin-right: 10px;
     margin-left: 60px;
+    ;
   }
-}
+}gi
 
 .delivery-paymant{
   h2{
@@ -204,37 +199,26 @@
   .helper-wrapper{
     position: relative;
     padding: 25px;
-    background: #FFFFFF;
+    background: rgba(27, 27, 43, 0.91);
+    color: #FFFFFF;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
-    @include mq('tablet-wide') {
-      &:before {
-        content: '';
-        position: absolute;
-        bottom: -29px;
-        left: 23px;
-        border: 14px solid transparent;
-        border-top: 14px solid rgba(0, 0, 0, 0.09);
-        display: block;
-        width: 0;
-        height: 0;
-      }
-      &:after {
-        content: '';
-        position: absolute;
-        bottom: -24px;
-        left: 25px;
-        border: 12px solid transparent;
-        border-top: 12px solid #fff;
-        display: block;
-        width: 0;
-        height: 0;
-      }
-    }
+
     .helper-close{
       cursor: pointer;
       position: absolute;
       top: 15px;
       right: 15px;
+    }
+  }
+}
+
+@include mq('tablet-wide') {
+  .helper{
+    &:hover{
+      .helper-body{
+        display: block;
+
+      }
     }
   }
 }

@@ -2540,7 +2540,7 @@ ul.catalog-card__list {
 }
 
 .sec-tabs {
-  padding: 10px 0 90px;
+  padding: 10px 0 30px;
 }
 
 .sec-tabs .tabs-nav__item {
@@ -2558,11 +2558,6 @@ ul.catalog-card__list {
 .checkbox .wrapper-price {
   height: auto;
   margin-bottom: 0;
-}
-
-.basket-card .wrapper-price {
-  align-self: flex-end;
-  flex-direction: column-reverse;
 }
 
 .specifications p {
@@ -2607,22 +2602,26 @@ ul.catalog-card__list {
   margin-left: 60px;
 }
 
+gi
 .delivery-paymant h2 {
   font-size: calc(16px + 2 * ((100vw - 320px) / 1600));
   font-weight: bold;
   margin-bottom: 15px;
 }
 
+gi
 .delivery-paymant p {
   font-size: calc(14px + 2 * ((100vw - 320px) / 1600));
   margin-bottom: 15px;
 }
 
+gi
 .delivery-paymant ul li {
   padding-left: 25px;
   position: relative;
 }
 
+gi
 .delivery-paymant ul li:before {
   content: '';
   position: absolute;
@@ -2682,7 +2681,8 @@ ul.catalog-card__list {
 .helper .helper-wrapper {
   position: relative;
   padding: 25px;
-  background: #FFFFFF;
+  background: rgba(27, 27, 43, 0.91);
+  color: #FFFFFF;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -3408,28 +3408,8 @@ ul.catalog-card__list {
     left: -30px;
   }
 
-  .helper .helper-wrapper:before {
-    content: '';
-    position: absolute;
-    bottom: -29px;
-    left: 23px;
-    border: 14px solid transparent;
-    border-top: 14px solid rgba(0, 0, 0, 0.09);
+  .helper:hover .helper-body {
     display: block;
-    width: 0;
-    height: 0;
-  }
-
-  .helper .helper-wrapper:after {
-    content: '';
-    position: absolute;
-    bottom: -24px;
-    left: 25px;
-    border: 12px solid transparent;
-    border-top: 12px solid #fff;
-    display: block;
-    width: 0;
-    height: 0;
   }
 
   .sec-also-buy {
