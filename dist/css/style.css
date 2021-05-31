@@ -1981,6 +1981,7 @@ body.lock {
 
 .basket-card .basket-card__content {
   display: grid;
+  position: relative;
 }
 
 .basket-card .wrapper-price {
@@ -3961,6 +3962,12 @@ ul.catalog-card__list {
 
   .wrapper-result-btn .itogi-btn {
     width: 100%;
+  }
+
+  .ic-delitet {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
   }
 
   .catalog-card__btn {

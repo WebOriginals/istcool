@@ -50,11 +50,12 @@
     .card-info__quantity{
       width: 131px;
       height: 59px;
-
     }
   }
   .basket-card__content{
     display: grid;
+    position: relative;
+
 
     @include mq('tablet') {
       grid-template-columns: 1fr 130px 150px 130px 76px;
@@ -164,4 +165,9 @@
 .ic-delitet{
   display: flex;
   justify-content: center;
+  @include maq('tablet') {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+  }
 }
