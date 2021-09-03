@@ -5,11 +5,13 @@ html(lang="ru")
         meta(charset="UTF-8")
         meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0")
         title istcool
+        link(rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css")
         link(rel="stylesheet" href="css/style.min.css")
 
     body
         include pug/basic/header
-        +title('Контакты')
+
+        include pug/contacts/slider
         include pug/contacts/contacts
 
         include pug/basic/footer
@@ -17,6 +19,7 @@ html(lang="ru")
         include pug/basic/modals
 
         script(src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js")
+        script(src="https://unpkg.com/swiper/swiper-bundle.min.js")
         script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ>" type="text/javascript")
         script(src="js/script.min.js")
 

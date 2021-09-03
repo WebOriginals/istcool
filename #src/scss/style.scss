@@ -65,6 +65,7 @@
 
 //page contacts
 @import "contacts/contacts.scss";
+@import "contacts/slider.scss";
 
 //page about_us
 @import "about_us/description.scss";
@@ -86,6 +87,57 @@
 @import "price-list/price-list.scss";
 
 
+.column{
+  width: 100%;
+  background: #F8F8F8;
+  display: grid;
+  grid-template-columns:1fr;
+  grid-gap: 30px;
+  @include mq('tablet-wide') {
+    width: 70%;
+    grid-template-columns: auto 1fr;
+  }
 
+  &__img{
+
+    img{
+      max-width: 100%;
+      @include maq('tablet-wide') {
+        width: 100%;
+      }
+    }
+  }
+  &__list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .column-list__title{
+    @include adaptiv-font(30,24);
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  ul{
+      li{
+        list-style: disc;
+        color: red;
+        @include adaptiv-font(20,16);
+        &:hover{
+          list-style: none;
+          a{
+            color: red;
+          }
+        }
+        a{
+          color: #161616;
+          &:hover{
+            text-decoration: none;
+          }
+        }
+
+      }
+  }
+}
 
 
