@@ -508,7 +508,7 @@ document.addEventListener('keydown', function (e) {
         },
         breakpoints: {
             320: {
-                slidesPerView: 1.2,
+                slidesPerView: 1.5,
                 spaceBetween: 15,
             },
 
